@@ -30,5 +30,5 @@ def spirou_crescent(suffix i,j,k,val) =
  ... (val[x.k,x.j],val[y.j,y.k]){z.k-z.j}
  ... z.k{x.k-x.j,0u} enddef;
 ```
-`spirou_crescent` = fonction des courbes vertical
+`spirou_crescent` = fonction des courbes verticales
 
