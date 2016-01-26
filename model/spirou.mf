@@ -1,0 +1,10 @@
+% 9-point Spirou
+font_size 28pt#;
+u#:=3pt#;    % unit width
+ht#:=7u#;    % height of characters
+xgap#:=6u#;  % horizontal adjustment
+s#:=0pt#;    % extra space at the left and the right
+o#:=.1u#;    % overshoot
+px#:=4pt#;    % horizontal pen
+input spirou_base
+end
