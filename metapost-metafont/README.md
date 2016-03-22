@@ -61,7 +61,9 @@ Le dessin du glyphe doit se situer entre `spchar()` et `spcharend()`.
 ####Les fonctions de courbe
 
 La fontion *spirou_half* sert à créer les courbe du «O» «C» «P» «R» etc.
-![Specimen](/screenshot/spirou_half.png)
+
+![Specimen](https://github.com/speculoos/metafont/blob/master/metapost-metafont/screenshot/spirou_half.png?raw=true)
+
 Il faut écrire la courbe de cette manière
 
 ```
@@ -70,8 +72,6 @@ spirou_half(point1, point2, point3);
 
 La fonction *crb()* sert a créer des droites qui peuvent être mise sous tension.
 Elle compose par exemple le A.
-
-![Specimen](/screenshot/crb.png)
 
 
 
