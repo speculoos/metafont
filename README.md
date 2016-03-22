@@ -31,4 +31,4 @@ def spirou_crescent(suffix i,j,k,val) =
  ... z.k{x.k-x.j,0u} enddef;
 ```
 `spirou_crescent` = fonction des courbes verticales
-
+test
