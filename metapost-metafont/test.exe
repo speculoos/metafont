@@ -1,0 +1,9 @@
+#!/bin/bash
+	inkscape svg/P.svg \
+	--verb EditSelectAllInAllLayers \
+	--verb SelectionUnGroup \
+	--verb StrokeToPath \
+	--verb SelectionUnion \
+	--verb FileSave \
+	#--verb=FileClose \
+	

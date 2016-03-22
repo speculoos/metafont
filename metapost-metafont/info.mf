@@ -1,0 +1,57 @@
+% 9-point Spirou
+%font_size 20pt#;
+u#:=10pt#;    % unit width
+ht#:=7u#;    % height of characters
+xgap#:=6u#;  % horizontal adjustment
+s#:=0pt#;    % extra space at the left and the right
+o#:=.1u#;    % overshoot
+px#:=4pt#;    % horizontal pen
+
+mode_setup;
+if unknown slant: slant:=0 else: currenttransform:=
+ identity slanted slant yscaled aspect_ratio fi;
+
+ygap#:=(ht#/13.5u#)*xgap#;              % ajustement vertical
+ho#:=o#;                                % horizontal overshoot
+leftstemloc#:=2.5u#+s#;                 % position of left stem
+barheight#:=.5ht#;                     % height of bar lines
+py#:=1px#;                             % vertical pen thickness
+
+grid:=1; % 0=cacher la grille; 1=afficher la grille
+
+define_pixels(s,u);
+define_whole_pixels(xgap);
+define_whole_vertical_pixels(ygap);
+define_blacker_pixels(px,py);
+define_good_x_pixels(leftstemloc);
+define_good_y_pixels(barheight);
+define_corrected_pixels(o);
+define_horizontal_corrected_pixels(ho);
+
+font_coding_scheme:="standard";
+font_slant:=slant;
+font_normal_space:=6u#+2s#;
+font_normal_stretch:=3u#;
+font_normal_shrink:=2u#;
+font_quad:=18u#+2s#;
+font_extra_space:=2u#;
+
+
+def beginspirouchar(expr code, unit_width) =
+ beginchar(code,unit_width*u#+2s#,ht#,2u#);
+    endchar;
+
+enddef;
+
+beginspirouchar("A",6); 
+beginspirouchar("D",6);
+beginspirouchar("E",5);
+beginspirouchar("F",5);
+beginspirouchar("N",5);
+beginspirouchar("J",3);
+beginspirouchar("O",6);
+beginspirouchar("P",6);
+beginspirouchar("R",6);
+beginspirouchar("S",6);
+beginspirouchar("U",6);
+end;

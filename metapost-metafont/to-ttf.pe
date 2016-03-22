@@ -1,0 +1,6 @@
+#!/usr/bin/env fontforge
+Open ($1);
+MergeKern($2);
+RoundToInt ();
+Generate("temp/font.ttf");
+Quit (0);

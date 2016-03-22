@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- Created by MetaPost 1.999 on 2016.03.22:1603 -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="957.411133" height="1196.513916" viewBox="0 0 957.411133 1196.513916">
+<!-- Original BoundingBox: -120.051392 -239.602783 837.359741 956.911133 -->
+  <g transform="matrix(1.111119,-0.000000,-0.000000,1.000000,0.000000,0.000000)">
+    <path d="M215.594785 956.000000L215.594785 119.140259" style="stroke:rgb(60.000610%,60.000610%,60.000610%); stroke-width: 107.595520;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  </g>
+  <g transform="matrix(1.000000,-0.000000,-0.000000,0.899994,0.000000,0.000000)">
+    <path d="M717.756958 1062.229453L717.756958 132.378966" style="stroke:rgb(60.000610%,60.000610%,60.000610%); stroke-width: 119.551392;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  </g>
+  <path d="M309.272980 114.913208L193.741547 123.367310L648.035370 960.227051L763.566803 951.772949Z" style="fill: rgb(60.000610%,60.000610%,60.000610%);stroke: none;"></path>
+  <path d="M0.448608 1195.102783L956.859741 1195.102783L956.859741 -0.411133L0.448608 -0.411133Z" style="stroke:rgb(100.000000%,100.000000%,100.000000%); stroke-width: 1.000000;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M120.000000 119.140259L120.000000 956.000000" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M239.551392 119.140259L239.551392 956.000000" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M359.102783 119.140259L359.102783 956.000000" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M478.654175 119.140259L478.654175 956.000000" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M598.205566 119.140259L598.205566 956.000000" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M717.756958 119.140259L717.756958 956.000000" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M837.308350 119.140259L837.308350 956.000000" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M120.000000 956.000000L837.308350 956.000000" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M120.000000 836.448608L837.308350 836.448608" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M120.000000 716.897217L837.308350 716.897217" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M120.000000 597.345825L837.308350 597.345825" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M120.000000 477.794434L837.308350 477.794434" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M120.000000 358.243042L837.308350 358.243042" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M120.000000 238.691650L837.308350 238.691650" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M120.000000 119.140259L837.308350 119.140259" style="stroke:rgb(0.000000%,0.000000%,100.000000%); stroke-width: 1.199997;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.199997,-0.000000,-0.000000,2.199997,234.071930 953.000000)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <text font-size="9.962646">1</text>
+  </g>
+  <path d="M239.551392 956.000000l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.199997,-0.000000,-0.000000,2.199997,234.071930 116.140259)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <text font-size="9.962646">2</text>
+  </g>
+  <path d="M239.551392 119.140259l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.199997,-0.000000,-0.000000,2.199997,246.027802 116.140259)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <text font-size="9.962646">3</text>
+  </g>
+  <path d="M251.507263 119.140259l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.199997,-0.000000,-0.000000,2.199997,700.321625 953.000000)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <text font-size="9.962646">4</text>
+  </g>
+  <path d="M705.801086 956.000000l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.199997,-0.000000,-0.000000,2.199997,712.277496 953.000000)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <text font-size="9.962646">5</text>
+  </g>
+  <path d="M717.756958 956.000000l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <g transform="matrix(2.199997,-0.000000,-0.000000,2.199997,712.277496 116.140259)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+    <text font-size="9.962646">6</text>
+  </g>
+  <path d="M717.756958 119.140259l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: bevel;stroke-miterlimit: 10.000000;fill: none;"></path>
+</svg>
