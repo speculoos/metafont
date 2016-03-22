@@ -10,9 +10,16 @@ Organisation des fichiers et dossiers.
 
 
 ###Mode Preview
-Voir le dessin d'une lettre dans en prévisualition.
+Voir le dessin d'une lettre en prévisualition.
 
     bash preview.sh A
+    
+Voir en inkscape
+
+    bash preview.sh A svg
+    
+Pour modifier les options d'affichages, ParamSave.mp > VISUALISATION
+
 
 ###Mode exécution
 Exécuter tout les glyphs
@@ -21,16 +28,16 @@ Exécuter tout les glyphs
 
 
 ##Composer un glyph
-Créer un fichier au nom du glyphe dans le dossir UC.
+Créer un fichier au nom du glyphe dans le dossier UC.
 (exemple H.mp)
 
 
-###Avant de dessiner.
+###Avant de dessiner
 Au début de ce fichier il faut déclarer un *input* pour associer le fichier de fonctions et le fichier de variables globales.
+param.mp appelle paramSave.mp qui appelle def.mp
 
 ```
 input ../param
-
 ```
 
 À la suite il faut déclarer la chasse de la lettre.
@@ -52,7 +59,7 @@ La fermeture du glyphe se fait par:
 spcharend(5);
 end;
 ```
-Le 5 correspond au nombres de points du glyph.
+Le 5 correspond au nombre de points du glyphe.
 
 ###Dessiner
 
