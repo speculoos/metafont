@@ -20,12 +20,12 @@ Exécuter tout les glyphs
     bash exe.sh
 
 
-###Composer un glyph
+##Composer un glyph
 Créer un fichier au nom du glyphe dans le dossir UC.
 (exemple H.mp)
 
 
-####Avant de dessiner.
+###Avant de dessiner.
 Au début de ce fichier il faut déclarer un *input* pour associer le fichier de fonctions et le fichier de variables globales.
 
 ```
@@ -54,9 +54,26 @@ end;
 ```
 Le 5 correspond au nombres de points du glyph.
 
-####Dessiner
+###Dessiner
 
 Le dessin du glyphe doit se situer entre `spchar()` et `spcharend()`.
+
+####Les fonctions de courbe
+
+La fontion *spirou_half* sert à créer les courbe du «O» «C» «P» «R» etc.
+![Specimen](/screenshot/spirou_half.png)
+Il faut écrire la courbe de cette manière
+
+```
+spirou_half(point1, point2, point3);
+```
+
+La fonction *crb()* sert a créer des droites qui peuvent être mise sous tension.
+Elle compose par exemple le A.
+
+![Specimen](/screenshot/crb.png)
+
+
 
 
 
