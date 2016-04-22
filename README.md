@@ -88,4 +88,19 @@ Criterias refined and defined
 * Sommit
 * Mid element position (x and y)
 * Openess and closeness
+
 Separate work : ends
+
+##22 April 2016
+Initials to be used for names
+* W Width
+* T Thickness (not so used by Franquin)
+* I Incline (x and y)
+* C Contrast (x and y)
+* P Curvature → Tension → Puffiness (that control morphology)
+* Z Perspective (x and y)
+* S Sommit
+* M Mid element position (x and y)
+* O Openess and closeness
+
+Separate work : E ends
