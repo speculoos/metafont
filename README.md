@@ -104,3 +104,15 @@ Initials to be used for names
 * O - Openess and closeness
 
 Separate work : E - ends
+
+##29 April 2016
+* w - width - chasse
+* b - boldness - graisse
+* i - incline (ix and iy) - inclinaison
+* c - contrast (cx and cy) - contraste
+* p - perspective (px and py) - perspective
+* r - roundness - rondeur
+* t - tension - tension
+* m - mid element position (mx and my) - milieu
+* o - openess (and closeness) - ouverture
+* e - ends - embouts
