@@ -11,8 +11,8 @@ x3=-2.25cx; x4=2.25cx;
 cutdraw z1--z2 col;
 cutdraw z3--z4 col;
 
-gouache(1);
-gouache(3);
-gouache(4);
+gouache(1, 0);
+gouache(3, 90);
+gouache(4, 90);
 spcharend(4);
 end;

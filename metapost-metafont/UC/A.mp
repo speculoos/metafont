@@ -15,5 +15,8 @@ dright=dleft reflectedabout(A,B);
 cutdraw dleft col;
 cutdraw dright col;
 cutdraw z4--z5 col;
+
+gouache(1, 154, refl);
+gouache(3, 0, sup);
 spcharend(5);
 end;

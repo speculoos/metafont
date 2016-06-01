@@ -11,6 +11,8 @@ spchar(83)
     x8=-2.25cx; y8=2.25cy
     spirou_half(1,2,3);
     draw z3{down}..z4..z5..{down}z6 col;
-    spirou_half(6,7,8); 
+    spirou_half(6,7,8);
+    gouache(1,0);
+    gouache(8,0);
 spcharend(8);
 end;

@@ -10,5 +10,6 @@ x4=2.25cx; y4=y5+((ho-y5)/2);
 spirou_crescent(3,4,5);
 cutdraw z1--z2--z3 col;
 cutdraw z5--z6 col;
+gouache(1,0);
 spcharend(6);
 end;
