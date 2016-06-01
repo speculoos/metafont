@@ -65,6 +65,12 @@ def PVisual(suffix visual,i,j,k)=
   fi
 enddef;
 
+def gouache(suffix i)=
+
+    undraw z.i;
+
+enddef;
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LES FONCTIONS DES COURBES. %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

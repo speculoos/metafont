@@ -28,7 +28,7 @@ fleche:=0;
 tens:=.2;
 
 %VISUALISATION
-visual:=2; %0=Brut 1=Avec Chasse 2=Avec Chasse + Grille
+visual:=1; %0=Brut 1=Avec Chasse 2=Avec Chasse + Grille 
 marg:=1; %Marg en X
 
 %LES INPUT

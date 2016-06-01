@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Created by MetaPost 1.999 on 2016.03.30:1446 -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="957.411133" height="1196.513916" viewBox="0 0 957.411133 1196.513916">
+<!-- Original BoundingBox: -120.051392 -239.602783 837.359741 956.911133 -->
+  <g transform="matrix(1.000000,-0.000000,-0.000000,0.899994,0.000000,0.000000)">
+    <path d="M478.654175 1062.229453L478.654175 192.154662" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 119.551392;stroke-miterlimit: 10.000000;fill: none;"></path>
+  </g>
+  <g transform="matrix(1.000000,-0.000000,-0.000000,0.899994,0.000000,0.000000)">
+    <path d="M209.663544 192.154662L747.644806 192.154662" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 119.551392;stroke-miterlimit: 10.000000;fill: none;"></path>
+  </g>
+  <g transform="matrix(1.000000,-0.000000,-0.000000,0.899994,0.000000,0.000000)">
+    <path d="M478.654175 1062.229453l0 0" style="stroke:rgb(100.000000%,100.000000%,100.000000%); stroke-width: 119.551392;stroke-linecap: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  </g>
+  <g transform="matrix(1.111119,-0.000000,-0.000000,1.000000,0.000000,0.000000)">
+    <path d="M188.695905 172.938019l0 0" style="stroke:rgb(100.000000%,100.000000%,100.000000%); stroke-width: 107.595520;stroke-linecap: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  </g>
+  <g transform="matrix(1.000000,-0.000000,-0.000000,0.899994,0.000000,0.000000)">
+    <path d="M747.644806 192.154662l0 0" style="stroke:rgb(100.000000%,100.000000%,100.000000%); stroke-width: 119.551392;stroke-linecap: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  </g>
+  <path d="M0.448608 1195.102783L956.859741 1195.102783L956.859741 -0.411133L0.448608 -0.411133Z" style="stroke:rgb(100.000000%,100.000000%,100.000000%); stroke-width: 1.000000;stroke-linecap: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+</svg>
