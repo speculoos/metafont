@@ -117,6 +117,9 @@ Separate work : E - ends
 * o - openess (and closeness) - ouverture
 * e - ends - embouts
 
+##2 June 2016
+Pad http://pads.osp.kitchen/p/metafranquin
+
 ##Doc
 
 Organisation des fichiers et dossiers.
