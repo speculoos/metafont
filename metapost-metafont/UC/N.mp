@@ -11,9 +11,12 @@ x6=x5=2cx;
 cutdraw z1--z2 col;
 cutdraw z5--z6 col;
 diago(3,4,45);
+
 gouache(1,0);
+
+
 gouache(6,0);
-gouache(2,8,doubl);
+gouache(2,18,doubl);
 gouache(5,8,doubl);
 spcharend(6);
 end;

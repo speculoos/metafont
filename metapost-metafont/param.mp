@@ -1,4 +1,4 @@
-%outputtemplate := "%j%c.svg"; % exporter en svg.
+outputtemplate := "%j%c.svg"; % exporter en svg.
 
 %UNITE DE VALEUR
 u:=40pt;
@@ -25,7 +25,7 @@ val:=.84;
 fleche:=0;
 
 %TENSION
-tens:=.3;
+tens:=.1;
 
 %VISUALISATION
 visual:=1; %0=Brut 1=Avec Chasse 2=Avec Chasse + Grille 
@@ -33,9 +33,6 @@ marg:=1; %Marg en X
 
 %LES INPUT
 input def
-
-%GOUACHE
-curve:=5;
 
 
 	
