@@ -65,6 +65,39 @@ def PVisual(suffix visual,i,j,k)=
   fi
 enddef;
 
+def gouache(suffix i, rot, opt)=
+  
+  Ysc:=sasy/curve; 
+  
+  if opt=refl:
+  
+    pickup pencircle xscaled sasx yscaled Ysc rotated rot;
+    undraw z.i;
+    pickup pencircle xscaled sasx yscaled Ysc rotated -rot;
+    undraw z.i reflectedabout(A,B) rotated 0;
+ 
+  elseif opt=sup:
+    
+    Xsc:=sasx*2;
+
+    pickup pencircle xscaled Xsc yscaled Ysc rotated rot;
+    undraw z.i shifted(0,sasy/2);
+  
+  elseif opt=doubl:
+    
+    Xsc:=sasx*2;
+
+    pickup pencircle xscaled Xsc yscaled Ysc rotated rot;
+    undraw z.i;
+  
+  else:
+
+    pickup pencircle xscaled sasx yscaled Ysc rotated rot;
+    undraw z.i;
+  
+  fi
+enddef;
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LES FONCTIONS DES COURBES. %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

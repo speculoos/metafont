@@ -5,6 +5,8 @@ ht#:=7u#;    % height of characters
 xgap#:=6u#;  % horizontal adjustment
 s#:=0pt#;    % extra space at the left and the right
 o#:=.1u#;    % overshoot
-px#:=4pt#;    % horizontal pen
+px#:=2pt#;   % horizontal pen
+echel_width:=1;
+
 input spirou_base
 end

@@ -25,10 +25,10 @@ val:=.84;
 fleche:=0;
 
 %TENSION
-tens:=.2;
+tens:=.1;
 
 %VISUALISATION
-visual:=2; %0=Brut 1=Avec Chasse 2=Avec Chasse + Grille
+visual:=2; %0=Brut 1=Avec Chasse 2=Avec Chasse + Grille 
 marg:=1; %Marg en X
 
 %LES INPUT

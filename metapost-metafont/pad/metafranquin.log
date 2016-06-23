@@ -1,0 +1,3035 @@
+This is MetaPost, version 1.999 (TeX Live 2015/Arch Linux) (kpathsea version 6.2.1)  3 JUN 2016 15:22
+**metafranquin.mp
+(/usr/share/texmf-dist/metapost/base/mpost.mp
+(/usr/share/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./metafranquin.mp (./param.mp 
+(./def.mp))
+>> sup-refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+l.55 gouache(3, 0, sup)
+                       ;
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+ [65{psfonts.map}<cmr10.pfb>] [68<cmr10.pfb>]
+>> 2
+! Undefined coordinates have been replaced by (0,0).
+<to be read again> 
+                   ;
+l.78 draw (0,0)--(length(p));
+                             
+I need x and y numbers for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (x1-5.47946,y1+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(1)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(1)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x1
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(1)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(1)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y1
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(1)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(1)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (x2-5.47946,y2+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(2)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(2)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x2
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(2)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(2)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y2
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(2)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(2)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (x3-5.47946,y3+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x3
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y3
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (x4-5.47946,y4+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(4)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(4)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x4
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(4)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(4)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y4
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(4)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(4)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (x5-5.47946,y5+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(5)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(5)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x5
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(5)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(5)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y5
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(5)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(5)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.79 spcharend(5)
+                 ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+ [70<cmr10.pfb>]
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.93 gouache(1,0);
+                  
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.93 gouache(1,0);
+                  
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.93 gouache(1,0);
+                  
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.93 gouache(1,0);
+                  
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.93 gouache(1,0);
+                  
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.93 gouache(1,0);
+                  
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.93 gouache(1,0);
+                  
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.94 gouache(6,0);
+                  
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.94 gouache(6,0);
+                  
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.94 gouache(6,0);
+                  
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.94 gouache(6,0);
+                  
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.94 gouache(6,0);
+                  
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.94 gouache(6,0);
+                  
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.94 gouache(6,0);
+                  
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+>> doubl-refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+l.95 gouache(2,8,doubl)
+                       ;
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+>> doubl-sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+l.95 gouache(2,8,doubl)
+                       ;
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+>> doubl-refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+l.96 gouache(5,8,doubl)
+                       ;
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+>> doubl-sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+l.96 gouache(5,8,doubl)
+                       ;
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+ [78<cmr10.pfb>] [105]
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.136 gouache(1,0);
+                   
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.136 gouache(1,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.136 gouache(1,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.136 gouache(1,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.136 gouache(1,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.136 gouache(1,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.136 gouache(1,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.137 gouache(7,35);
+                    
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.137 gouache(7,35);
+                    
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.137 gouache(7,35);
+                    
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.137 gouache(7,35);
+                    
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.137 gouache(7,35);
+                    
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.137 gouache(7,35);
+                    
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.137 gouache(7,35);
+                    
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+ [82<cmr10.pfb>]
+>> (x1-5.47946,y1+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(1)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(1)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x1
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(1)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(1)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y1
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(1)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(1)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (x2-5.47946,y2+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(2)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(2)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x2
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(2)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(2)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y2
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(2)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(2)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (x3-5.47946,y3+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x3
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y3
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (x4-5.47946,y4+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(4)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(4)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x4
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(4)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(4)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y4
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(4)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(4)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (x5-5.47946,y5+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(5)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(5)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x5
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(5)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(5)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y5
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(5)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(5)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.146 spcharend(5)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+ [120<cmr10.pfb>] [150]
+>> (0,y6)
+! Improper `:=' will be changed to `='.
+<recently read> :=
+                  
+l.191 z6:=
+          whatever [z1,z2];
+I didn't find a variable name at the left of the `:=',
+so I'm going to pretend that you said `=' instead.
+
+>> (0,y6)
+! Improper `:=' will be changed to `='.
+<recently read> :=
+                  
+l.192 z6:=
+          whatever [z9,z8];
+I didn't find a variable name at the left of the `:=',
+so I'm going to pretend that you said `=' instead.
+
+>> (478.20557,y5)
+! Improper `:=' will be changed to `='.
+<recently read> :=
+                  
+l.193 z5:=
+          whatever [z9,z8];
+I didn't find a variable name at the left of the `:=',
+so I'm going to pretend that you said `=' instead.
+
+>> (478.20557,469.837)
+! Improper `:=' will be changed to `='.
+<recently read> :=
+                  
+l.194 z5:=
+          whatever [fenetre];
+I didn't find a variable name at the left of the `:=',
+so I'm going to pretend that you said `=' instead.
+
+>> (478.20557,469.837)
+>> %CAPSULE0x3f25110
+! Equation cannot be performed (pair=numeric).
+<to be read again> 
+                   [
+<to be read again> 
+                   (478.20557)
+<to be read again> 
+                   ]
+l.194 z5:=whatever [fenetre]
+                            ;
+I'm sorry, but I don't know how to make such things equal.
+(See the two expressions just above the error message.)
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   [
+<to be read again> 
+                   (478.20557)
+<to be read again> 
+                   ]
+l.194 z5:=whatever [fenetre]
+                            ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+ [160<cmr10.pfb>]
+>> sup-refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+l.214 gouache(2,0,sup)
+                      ;
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+>> sup-refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+l.215 gouache(6,0,sup)
+                      ;
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.217 gouache(1,0);
+                   
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.217 gouache(1,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.217 gouache(1,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.217 gouache(1,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.217 gouache(1,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.217 gouache(1,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.217 gouache(1,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.218 gouache(7,0);
+                   
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.218 gouache(7,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.218 gouache(7,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.218 gouache(7,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.218 gouache(7,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.218 gouache(7,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.218 gouache(7,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+ [77<cmr10.pfb>]
+! Inconsistent equation (off by 125.52933).
+<to be read again> 
+                   ;
+l.234 y4=1.5cy
+              ;
+The equation I just read contradicts what was said before.
+But don't worry; continue and I'll just ignore it.
+
+ [78<cmr10.pfb>]
+! Inconsistent equation (off by -200.24803).
+<to be read again> 
+                   ;
+l.253 x4=2cx; y4=y5+((ho-y5)/2);
+                                
+The equation I just read contradicts what was said before.
+But don't worry; continue and I'll just ignore it.
+
+>> (x3-5.47946,y3+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.259 spcharend(7)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x3
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.259 spcharend(7)
+                  ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y3
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.259 spcharend(7)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (x6-5.47946,y6+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(6)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(6)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.259 spcharend(7)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> x6
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(6)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(6)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.259 spcharend(7)
+                  ;
+I need a `known' x value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y6
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(6)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(6)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.259 spcharend(7)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+ [75<cmr10.pfb>] [66<cmr10.pfb>]
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.296     gouache(1,0);
+                       
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.296     gouache(1,0);
+                       
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.296     gouache(1,0);
+                       
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.296     gouache(1,0);
+                       
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.296     gouache(1,0);
+                       
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.296     gouache(1,0);
+                       
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.296     gouache(1,0);
+                       
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.297     gouache(5,0);
+                       
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.297     gouache(5,0);
+                       
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.297     gouache(5,0);
+                       
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.297     gouache(5,0);
+                       
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.297     gouache(5,0);
+                       
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.297     gouache(5,0);
+                       
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.297     gouache(5,0);
+                       
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+ [67<cmr10.pfb>] [90<cmr10.pfb>]
+>> y3
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   {
+--->{
+     curl1}..{curl1}
+<argument> z1--
+               z2col
+cutdraw->...roup.interim.linecap:=butt;draw(TEXT0)
+                                                  _e_;endgroup
+<to be read again> 
+                   ;
+l.327 cutdraw z1--z2 col;
+                         
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> y3
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   {
+--->{
+     curl1}..{curl1}
+<argument> z3--
+               z4col
+cutdraw->...roup.interim.linecap:=butt;draw(TEXT0)
+                                                  _e_;endgroup
+<to be read again> 
+                   ;
+l.328 cutdraw z3--z4 col;
+                         
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.331 gouache(1,0);
+                   
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.331 gouache(1,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.331 gouache(1,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.331 gouache(1,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.331 gouache(1,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.331 gouache(1,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.331 gouache(1,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+>> y3
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withcolor
+undraw->draw(EXPR0)withcolor
+                            .background
+<to be read again> 
+                   ;
+gouache->...sc.rotated(SUFFIX1);undraw.z(SUFFIX0);
+                                                  fi
+<to be read again> 
+                   ;
+l.331 gouache(1,0);
+                   
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.332 gouache(2,0);
+                   
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.332 gouache(2,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.332 gouache(2,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.332 gouache(2,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.332 gouache(2,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.332 gouache(2,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.332 gouache(2,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.333 gouache(3,0);
+                   
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.333 gouache(3,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.333 gouache(3,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.333 gouache(3,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.333 gouache(3,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.333 gouache(3,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.333 gouache(3,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+>> y3
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withcolor
+undraw->draw(EXPR0)withcolor
+                            .background
+<to be read again> 
+                   ;
+gouache->...sc.rotated(SUFFIX1);undraw.z(SUFFIX0);
+                                                  fi
+<to be read again> 
+                   ;
+l.333 gouache(3,0);
+                   
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.334 gouache(4,0);
+                   
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.334 gouache(4,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.334 gouache(4,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.334 gouache(4,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.334 gouache(4,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.334 gouache(4,0);
+                   
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.334 gouache(4,0);
+                   
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+>> (54.29623,y3+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(1)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(1)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.336 spcharend(6)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> y3
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(1)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(1)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.336 spcharend(6)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (532.5018,y3+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.336 spcharend(6)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> y3
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(3)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(3)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.336 spcharend(6)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+ [72<cmr10.pfb>]
+>> b
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withcolor
+col->if.visual>1:withcolor
+                          0.6white.else:fi
+cutdraw->...roup.interim.linecap:=butt;draw(TEXT0)
+                                                  _e_;endgroup
+<to be read again> 
+                   ;
+l.345 cutdraw z1--z2 col;
+                         
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> b
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withcolor
+col->if.visual>1:withcolor
+                          0.6white.else:fi
+cutdraw->...roup.interim.linecap:=butt;draw(TEXT0)
+                                                  _e_;endgroup
+<to be read again> 
+                   ;
+l.346 cutdraw z3--z4 col;
+                         
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.348 gouache(1,28);
+                    
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.348 gouache(1,28);
+                    
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.348 gouache(1,28);
+                    
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.348 gouache(1,28);
+                    
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.348 gouache(1,28);
+                    
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.348 gouache(1,28);
+                    
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.348 gouache(1,28);
+                    
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.349 gouache(2,28);
+                    
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.349 gouache(2,28);
+                    
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.349 gouache(2,28);
+                    
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.349 gouache(2,28);
+                    
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.349 gouache(2,28);
+                    
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.349 gouache(2,28);
+                    
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.349 gouache(2,28);
+                    
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+>> b
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withcolor
+undraw->draw(EXPR0)withcolor
+                            .background
+<to be read again> 
+                   ;
+gouache->...sc.rotated(SUFFIX1);undraw.z(SUFFIX0);
+                                                  fi
+<to be read again> 
+                   ;
+l.349 gouache(2,28);
+                    
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.350 gouache(3,145);
+                     
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.350 gouache(3,145);
+                     
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.350 gouache(3,145);
+                     
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.350 gouache(3,145);
+                     
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.350 gouache(3,145);
+                     
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.350 gouache(3,145);
+                     
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.350 gouache(3,145);
+                     
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.351 gouache(4,145);
+                     
+That macro has more parameters than you thought.
+I'll continue by pretending that each missing argument
+is either zero or null.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.351 gouache(4,145);
+                     
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.351 gouache(4,145);
+                     
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.351 gouache(4,145);
+                     
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.351 gouache(4,145);
+                     
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.351 gouache(4,145);
+                     
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.351 gouache(4,145);
+                     
+Oh dear. I can't decide if the expression above is positive,
+negative, or zero. So this comparison test won't be `true'.
+
+>> b
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withcolor
+undraw->draw(EXPR0)withcolor
+                            .background
+<to be read again> 
+                   ;
+gouache->...sc.rotated(SUFFIX1);undraw.z(SUFFIX0);
+                                                  fi
+<to be read again> 
+                   ;
+l.351 gouache(4,145);
+                     
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (592.2775,b+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(2)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(2)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.353 spcharend(4)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> b
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(2)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(2)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.353 spcharend(4)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+>> (-5.47946,b+3,1,0,0,1)
+! Transform components aren't all known.
+<to be read again> 
+                   endgroup
+dotlabel->...group.label(SUFFIX2)((EXPR3),(EXPR4))
+                                                  (TEXT5);interim.linecap:=r...
+<to be read again> 
+                   ;
+<for(4)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(4)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.353 spcharend(4)
+                  ;
+I'm unable to apply a partially specified transformation
+except to a fully known pair or transform.
+Proceed, and I'll omit the transformation.
+
+>> b
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   withpen
+draw->...:also(EXPR0)else:doublepath(EXPR0)withpen
+                                                  .currentpen.fi._op_
+<to be read again> 
+                   withpen
+dotlabel->...m.linecap:=rounded;draw(EXPR4)withpen
+                                                  .pencircle.scaled.dotlabel...
+<to be read again> 
+                   ;
+<for(4)> dotlabel.top(str(SUFFIX0),z(SUFFIX0));
+                                                ENDFOR
+dotlabels->...3):dotlabel(SUFFIX2)(str$,z$);endfor
+                                                  .endgroup
+<for(4)> dotlabels.top([(EXPR0)])
+                                 ; ENDFOR
+spcharend->...o(SUFFIX0):dotlabels.top([i]);endfor
+                                                  ;fi.endfig
+l.353 spcharend(4)
+                  ;
+I need a `known' y value for this part of the path.
+The value I found (see above) was no good;
+so I'll try to keep going by using zero instead.
+(Chapter 27 of The METAFONTbook explains that
+you might want to type `I ???' now.)
+
+ [88<cmr10.pfb>] )
+17 output files written: metafranquin.65 .. metafranquin.160
+

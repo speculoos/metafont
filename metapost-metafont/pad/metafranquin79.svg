@@ -1,0 +1,45 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: -121 -240 838 957 
+%%HiResBoundingBox: -120.05139 -239.60278 837.35974 956.91113 
+%%Creator: MetaPost 1.999
+%%CreationDate: 2016.06.03:1415
+%%Pages: 1
+%%DocumentResources: procset mpost-minimal
+%%DocumentSuppliedResources: procset mpost-minimal
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset mpost-minimal
+/bd{bind def}bind def/fshow {exch findfont exch scalefont setfont show}bd
+/fcp{findfont dup length dict begin{1 index/FID ne{def}{pop pop}ifelse}forall}bd
+/fmc{FontMatrix dup length array copy dup dup}bd/fmd{/FontMatrix exch def}bd
+/Amul{4 -1 roll exch mul 1000 div}bd/ExtendFont{fmc 0 get Amul 0 exch put fmd}bd
+/ScaleFont{dup fmc 0 get Amul 0 exch put dup dup 3 get Amul 3 exch put fmd}bd
+/SlantFont{fmc 2 get dup 0 eq{pop 1}if Amul FontMatrix 0 get mul 2 exch put fmd}bd
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+%%Page: 1 1
+ 0 0 0 setrgbcolor 119.55139
+ 0 dtransform exch truncate exch idtransform pop setlinewidth [] 0 setdash
+ 0 setlinecap 0 setlinejoin 10 setmiterlimit
+gsave newpath 89.66354 418.42987 moveto
+89.66354 524.70752 89.67404 666.39128 132.70303 724.71951 curveto
+175.73201 783.04773 275.10251 783.06198 358.65417 783.06198 curveto
+442.20584 783.06198 541.57634 783.04773 584.60532 724.71951 curveto
+627.63431 666.39128 627.6448 524.70752 627.6448 418.42987 curveto
+1 0.89998 scale stroke grestore
+gsave newpath 89.66354 418.42987 moveto
+89.66354 312.15222 89.67404 170.46846 132.70303 112.14023 curveto
+175.73201 53.81201 275.10251 53.79776 358.65417 53.79776 curveto
+442.20584 53.79776 541.57634 53.81201 584.60532 112.14023 curveto
+627.63431 170.46846 627.6448 312.15222 627.6448 418.42987 curveto
+1 0.89998 scale stroke grestore
+ 1 1 1 setrgbcolor 0 1 dtransform truncate idtransform setlinewidth pop
+newpath -119.55139 -239.10278 moveto
+836.85974 -239.10278 lineto
+836.85974 956.41113 lineto
+-119.55139 956.41113 lineto
+ closepath stroke
+showpage
+%%EOF

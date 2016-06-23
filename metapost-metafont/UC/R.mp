@@ -12,5 +12,7 @@ spirou_crescent(3,4,5);
 cutdraw z1--z2--z3 col;
 cutdraw z5--z6 col;
 cutdraw z5--z7 col;
+%gouache(1,0);
+%gouache(7,35);
 spcharend(7);
 end;
