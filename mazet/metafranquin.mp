@@ -62,20 +62,27 @@ prologues:=3; % ps output (remove the % if needed)
 u:=40pt;
 
 % Construction Mazet
+def construct=
 penx:=3u; % graisse x
 peny:=3u; % graisse y
+penxy=penx+peny/2; % moyenne xy
+roundoverx=penx/2; % débordement pour arrondis x
+roundovery=peny/4; % débordement pour arrondis y
 baseline:=0; % ligne de base
 baselinepen:=baseline+(peny/2); % ligne de base du tracé
+baselineround:=baselinepen-roundovery; % ligne de base avec débordement
 % baselinegouache = dépassement en-dessous baseline pour être gouaché
 capheight:=7peny; % hauteur totale
 capheightpen:=capheight-(peny/2); % hauteur du tracé
+capheightround:=capheightpen+roundovery; % hauteur du tracé avec débordement
 % capheighgouache = dépassement au-dessus capheight pour être gouaché
-% leftside = bord gauche
-% leftsidepen = bord gauche du tracé
-% rightside = bord droit
-% rightsidepen = bord droit du tracé
+leftside:=0; % bord gauche
+leftsidevertical:=leftside+1.5penx; % bord gauche du tracé vertical
+leftsideround:=leftsidevertical-roundoverx; % bord gauche du tracé rond
+rightside:=widthx; % bord droit
+rightsidevertical:=rightside-1.5penx; % bord droit du tracé vertical
+rightsideround:=rightsidevertical+roundoverx; % bord droit du tracé rond
 middley:=capheight/2; % ligne centre y
-
 ux:=sasx:=penx; % ancien
 uy:=sasy:=peny; % ancien
 sas:=(sasx+sasy)/2; % ancien
@@ -83,18 +90,18 @@ bo:=baselinepen; % ancien
 h:=capheight; % ancien
 ho:=capheightpen; % ancien
 barheight:=middley; % ancien
-
 % middlex = ligne centre x
 % upperbowly = ligne centre y de l'arrondi haut
 % lowerbowly = ligne centre y de l'arrondi bas
 % bridgex = tracé centre x compensé
-
 % pivotx = ligne de pivotement de l'attraction x
 % pivoty = ligne de pivotement de l'attraction y
 % pivot = point de pivot
 % fuitepoint = point d'attraction
 % fuiteX = ligne d'attraction x
 % fuiteY = ligne d'attraction y
+% fuite = ligne (axe) d'attraction entre point d'attraction et pivot
+enddef;
 
 % Courbes
 val:=.84;
@@ -104,11 +111,11 @@ fleche:=0;
 tens:=.9;
 
 % Preview
-visual:=2; % 0 = Brut , 1 = avec widthx , 2 = avec widthx + grille
+visual:=2; % 0 = Brut , 1 = avec widthu , 2 = avec widthu + grille
 marg:=0; % Marge en x
 
 % Construction Darius
-def build=
+def buildarius=
 Baseline:=0;
 CapHeight:=VanishPointMean:=ho;
 MeanLine:=h/2;
@@ -123,8 +130,8 @@ enddef;
 % Caractère
 def spchar(expr carac)=
   beginfig(carac)
-  middlex:=(widthx*penx)/2;
-  w:=widthx;
+  middlex:=(widthu*penx)/2;
+  widthx:=widthu*penx;
     def cx=
         penx+middlex;
     enddef;
@@ -134,9 +141,10 @@ def spchar(expr carac)=
     pair A,B;
     A:=(middlex,0u);
     B:=(middlex,7u);
-    pickup pencircle xscaled sasx yscaled sasy;
+    pickup pencircle xscaled penx yscaled peny;
     linejoin:=mitered;
-build;
+construct;
+buildarius;
 enddef;
 
 % Courbe tensions
@@ -163,15 +171,15 @@ def spcharend(suffix n_points)=
 pickup pencircle scaled 1;
 
 if visual>=1:
-    draw (-marg*ux,-2*uy)--((marg+widthx)*ux,-2*uy)--((marg+widthx)*ux,h+3u)--(-marg*ux,h+3u)-- cycle withcolor white;
+    draw (-marg*ux,-2*uy)--((marg+widthu)*ux,-2*uy)--((marg+widthu)*ux,h+3u)--(-marg*ux,h+3u)-- cycle withcolor white;
     fi
     if visual>1:  
     pickup pencircle scaled 1.2
-      for i=0 upto widthx:
+      for i=0 upto widthu:
         draw (i*ux,h)--(i*ux,0) withcolor blue;
     endfor
       for i=0 upto 7:
-        draw (0*ux,i*uy)--(widthx*ux,i*uy) withcolor blue;
+        draw (0*ux,i*uy)--(widthu*ux,i*uy) withcolor blue;
       endfor;
 
     defaultscale :=2.2;
@@ -300,7 +308,7 @@ defaultscale:=.2;
 % ## Droitues
 
 % Lettre E
-widthx:=6;
+widthu:=6;
 spchar(69)
 x4:=x1:=RightCorner;
 y1:=y2:=bo;
@@ -313,7 +321,7 @@ cutdraw z5 -- z6 col;
 spcharend(6);
 
 % Lettre F
-widthx:=6;
+widthu:=6;
 spchar(70)
 x4:=x1:=RightCorner;
 y1:=bo;
@@ -327,7 +335,7 @@ cutdraw z5 -- z6 col;
 spcharend(6);
 
 % Lettre H
-widthx:=6;
+widthu:=6;
 spchar(72)
 x6:=x4:=x1:=RightCorner;
 y2:=y1:=BaseLine;
@@ -340,7 +348,7 @@ cutdraw z5 -- z6 col;
 spcharend(6);
 
 % Lettre I
-widthx:=3;
+widthu:=3;
 spchar(73)
 x2:=x1:=Middle;
 y2:=h;
@@ -349,7 +357,7 @@ cutdraw z1 -- z2 col;
 spcharend(6);
 
 % Lettre L
-widthx:=5;
+widthu:=5;
 spchar(76)
 x4:=x1:=RightCorner - .5ux;
 y1:=bo;
@@ -360,7 +368,7 @@ cutdraw z1 -- z2 -- z3  col;
 spcharend(6);
 
 % Lettre T
-widthx:=5;
+widthu:=5;
 spchar(84)
 x2:=x1:=Middle;
 y1:=BaseLine;
@@ -375,7 +383,7 @@ spcharend(4);
 % Pentues
 
 % Lettre A
-widthx:=7;
+widthu:=7;
 spchar(65)
 x1=LeftCorner - .5ux; 
 y1=Baseline;
@@ -398,7 +406,7 @@ gouache(3, 0, sup);
 spcharend(5);
 
 % Lettre M
-widthx:=7;
+widthu:=7;
 spchar(77)
 x2=x1=LeftCorner - .4ux; 
 x3=x2 + Bridge;
@@ -416,7 +424,7 @@ gouache(7,0);
 spcharend(7);
 
 % Lettre V
-widthx:=7;
+widthu:=7;
 spchar(86)
 x1=LeftCorner - .5ux; 
 y1=h;
@@ -433,7 +441,7 @@ spcharend(5);
 % Anciens dessins
 
 % Lettre D
-widthx:=6;
+widthu:=6;
 spchar(68)
 x2=x1=-2cx; y5=y1=bo;
 y3=y2=ho;
@@ -444,7 +452,7 @@ cutdraw z5--z1--z2--z3 col;
 spcharend(5);
 
 % Lettre N
-widthx:=6;
+widthu:=6;
 spchar(78)
 x2=x1=-2cx; y4=y5=y1=0cy;
 x3=x2+0.1ux;
@@ -462,7 +470,7 @@ gouache(5,8,doubl);
 spcharend(6);
 
 % Lettre R
-widthx:=6;
+widthu:=6;
 spchar(82)
 x6=x2=x1=-2cx; y1=0cy;
 y3=y2=ho;
@@ -478,7 +486,7 @@ gouache(7,35);
 spcharend(7);
 
 % Lettre N
-widthx:=6;
+widthu:=6;
 spchar(78)
 x2=x1=-2cx; 
 x3=-1.75cx;
@@ -497,7 +505,7 @@ cutdraw z1 //(1,2,r) z2 -- z3 //(3,4,r) z4 -- z5 //(5,6,left) z6 col;
 spcharend(6);
 
 % Lettre K
-widthx:=5;
+widthu:=5;
 spchar(75)
 x2=x1=-1.5cx; y1=0cy;
 y2=h;
@@ -513,7 +521,7 @@ cutdraw z4--z5--z7 col;
 spcharend(7);
 
 % Lettre B
-widthx:=6;
+widthu:=6;
 spchar(66)
 x6=x2=x1=-2cx; y8=y1=bo;
 y3=y2=ho;
@@ -530,7 +538,7 @@ cutdraw z5--z6 col;
 spcharend(8);
 
 % Lettre C
-widthx:=6;
+widthu:=6;
 spchar(67)
     x5=x1=2cx; y1=5cy;
     y3=barheight;
@@ -544,7 +552,7 @@ spchar(67)
 spcharend(5);
 
 % Lettre Z
-widthx:=6;
+widthu:=6;
 spchar(90)
 x1=-2cx;
 y2=y1=ho;
@@ -558,7 +566,7 @@ cutdraw z1--z2--z3--z4--z5--z6 col;
 spcharend(6);
 
 % Lettre H
-widthx:=5;
+widthu:=5;
 spchar(900)
 x5=x2=x1=-2cx;
 x6=x4=x3=2cx;
@@ -574,7 +582,7 @@ gouache(4,0);
 spcharend(6);
 
 % Lettre X
-widthx:=5;
+widthu:=5;
 spchar(88)
 x4=x1=-2.5cx; y4=y2=b;
 x3=x2=2.5cx; y3=y1=h;
@@ -587,7 +595,7 @@ gouache(4,145);
 spcharend(4);
 
 % Lettre R bis
-widthx:=6;
+widthu:=6;
 spchar(162)
 CapHeight:=VanishPointMean:=ho;
 MeanLine:=CapHeight/3; % a faire varier
@@ -617,7 +625,7 @@ cutdraw z5--z7 col;
 spcharend(6);
 
 % Lettre R autre
-widthx:=6;
+widthu:=6;
 spchar(160)
 plafond:=fuitebureau:=ho;
 bureau:=plafond/3; % a faire varier
@@ -648,7 +656,7 @@ cutdraw z5--z7 col;
 spcharend(29);
 
 % Lettre P basé sur R
-widthx:=6;
+widthu:=6;
 spchar(80)
 headline:=fuitebureau:=ho;
 bureau:=plafond/4;
@@ -677,7 +685,7 @@ cutdraw z1 -- z2 -- z3{right} ... z4 ... {dir(180+angle(z8-z9))}z5--z6 col;
 spcharend(10)
 
 % Lettre O
-widthx:=6;
+widthu:=6;
 spchar(79)
 x1:=x3:=Middle;
 x2:=LeftFoot;
@@ -703,15 +711,16 @@ cutdraw z1 //(1,2) z2 col;
 spcharend(3)
 
 % Lettre C version 2
-widthx:=6;
+widthu:=6;
 spchar(790)
-x1:=x3:=Middle;
-x2:=LeftFoot;
-x4:=RightFoot;
-y1:=BaseLine;
-y3:=CapHeight;
-y2:=y4:=MeanLine;
+fuite:=middley;
+x1:=x3:=middlex;
+y1:=baselineround;
+y3:=capheightround;
+y2:=y4:=fuite;
+x2:=leftsideround;
+x4:=rightsideround;
 cutdraw z1 .. z2 .. z3 .. z4 .. cycle col;
-spcharend(6);
+spcharend(4);
 
 end
