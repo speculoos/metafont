@@ -61,22 +61,40 @@ prologues:=3; % ps output (remove the % if needed)
 % Unité
 u:=40pt;
 
-% Chasse X
-ux:=3u;
+% Construction Mazet
+penx:=3u; % graisse x
+peny:=3u; % graisse y
+baseline:=0; % ligne de base
+baselinepen:=baseline+(peny/2); % ligne de base du tracé
+% baselinegouache = dépassement en-dessous baseline pour être gouaché
+capheight:=7peny; % hauteur totale
+capheightpen:=capheight-(peny/2); % hauteur du tracé
+% capheighgouache = dépassement au-dessus capheight pour être gouaché
+% leftside = bord gauche
+% leftsidepen = bord gauche du tracé
+% rightside = bord droit
+% rightsidepen = bord droit du tracé
+middley:=capheight/2; % ligne centre y
 
-% Hauteur
-uy:=3u;
-h:=7uy;
+ux:=sasx:=penx; % ancien
+uy:=sasy:=peny; % ancien
+sas:=(sasx+sasy)/2; % ancien
+bo:=baselinepen; % ancien
+h:=capheight; % ancien
+ho:=capheightpen; % ancien
+barheight:=middley; % ancien
 
-% Graisses 
-sas:=3u; %GRAISSE
-sasx:=1sas; %GRAISSE X
-sasy:=.8sas; %GRAISSE Y
-ho:=h-(sasy/2); 
-bo:=sasy/2;
+% middlex = ligne centre x
+% upperbowly = ligne centre y de l'arrondi haut
+% lowerbowly = ligne centre y de l'arrondi bas
+% bridgex = tracé centre x compensé
 
-% Traverses
-barheight:=h/2;
+% pivotx = ligne de pivotement de l'attraction x
+% pivoty = ligne de pivotement de l'attraction y
+% pivot = point de pivot
+% fuitepoint = point d'attraction
+% fuiteX = ligne d'attraction x
+% fuiteY = ligne d'attraction y
 
 % Courbes
 val:=.84;
@@ -86,8 +104,8 @@ fleche:=0;
 tens:=.9;
 
 % Preview
-visual:=1; %0=Brut 1=Avec Chasse 2=Avec Chasse + Grille
-marg:=0; %Marg en X
+visual:=2; % 0 = Brut , 1 = avec widthx , 2 = avec widthx + grille
+marg:=0; % Marge en x
 
 % Construction Darius
 def build=
@@ -97,7 +115,6 @@ MeanLine:=h/2;
 Middle:=0cx;
 LowerBowl:=CapHeight/4;
 Pivot:=Middle;
-Width:=4x;
 LeftCorner:=-2cx;
 RightCorner:=2cx;
 Bridge:=sasx/3;
@@ -106,20 +123,17 @@ enddef;
 % Caractère
 def spchar(expr carac)=
   beginfig(carac)
-  c:=(chasse*ux)/2;
-  w:=chasse;
+  middlex:=(widthx*penx)/2;
+  w:=widthx;
     def cx=
-        ux+c;
+        penx+middlex;
     enddef;
     def cy=
-        uy;
-    enddef;
-    def fcx=
-        u+c;
+        peny;
     enddef;
     pair A,B;
-    A:=(c,0u);
-    B:=(c,7u);
+    A:=(middlex,0u);
+    B:=(middlex,7u);
     pickup pencircle xscaled sasx yscaled sasy;
     linejoin:=mitered;
 build;
@@ -149,15 +163,15 @@ def spcharend(suffix n_points)=
 pickup pencircle scaled 1;
 
 if visual>=1:
-    draw (-marg*ux,-2*uy)--((marg+chasse)*ux,-2*uy)--((marg+chasse)*ux,h+3u)--(-marg*ux,h+3u)-- cycle withcolor white;
+    draw (-marg*ux,-2*uy)--((marg+widthx)*ux,-2*uy)--((marg+widthx)*ux,h+3u)--(-marg*ux,h+3u)-- cycle withcolor white;
     fi
     if visual>1:  
     pickup pencircle scaled 1.2
-      for i=0 upto chasse:
+      for i=0 upto widthx:
         draw (i*ux,h)--(i*ux,0) withcolor blue;
     endfor
       for i=0 upto 7:
-        draw (0*ux,i*uy)--(chasse*ux,i*uy) withcolor blue;
+        draw (0*ux,i*uy)--(widthx*ux,i*uy) withcolor blue;
       endfor;
 
     defaultscale :=2.2;
@@ -230,6 +244,7 @@ enddef;
 defaultscale:=.2;
 
 
+
 % ## Vocabulaire anatomique des lettres Darius
 
 % CapHeight = Hauteur de la lettre
@@ -285,7 +300,7 @@ defaultscale:=.2;
 % ## Droitues
 
 % Lettre E
-chasse:=6;
+widthx:=6;
 spchar(69)
 x4:=x1:=RightCorner;
 y1:=y2:=bo;
@@ -298,7 +313,7 @@ cutdraw z5 -- z6 col;
 spcharend(6);
 
 % Lettre F
-chasse:=6;
+widthx:=6;
 spchar(70)
 x4:=x1:=RightCorner;
 y1:=bo;
@@ -312,7 +327,7 @@ cutdraw z5 -- z6 col;
 spcharend(6);
 
 % Lettre H
-chasse:=6;
+widthx:=6;
 spchar(72)
 x6:=x4:=x1:=RightCorner;
 y2:=y1:=BaseLine;
@@ -325,7 +340,7 @@ cutdraw z5 -- z6 col;
 spcharend(6);
 
 % Lettre I
-chasse:=3;
+widthx:=3;
 spchar(73)
 x2:=x1:=Middle;
 y2:=h;
@@ -334,7 +349,7 @@ cutdraw z1 -- z2 col;
 spcharend(6);
 
 % Lettre L
-chasse:=5;
+widthx:=5;
 spchar(76)
 x4:=x1:=RightCorner - .5ux;
 y1:=bo;
@@ -345,7 +360,7 @@ cutdraw z1 -- z2 -- z3  col;
 spcharend(6);
 
 % Lettre T
-chasse:=5;
+widthx:=5;
 spchar(84)
 x2:=x1:=Middle;
 y1:=BaseLine;
@@ -360,7 +375,7 @@ spcharend(4);
 % Pentues
 
 % Lettre A
-chasse:=7;
+widthx:=7;
 spchar(65)
 x1=LeftCorner - .5ux; 
 y1=Baseline;
@@ -383,7 +398,7 @@ gouache(3, 0, sup);
 spcharend(5);
 
 % Lettre M
-chasse:=7;
+widthx:=7;
 spchar(77)
 x2=x1=LeftCorner - .4ux; 
 x3=x2 + Bridge;
@@ -401,7 +416,7 @@ gouache(7,0);
 spcharend(7);
 
 % Lettre V
-chasse:=7;
+widthx:=7;
 spchar(86)
 x1=LeftCorner - .5ux; 
 y1=h;
@@ -415,14 +430,10 @@ cutdraw dleft col;
 cutdraw dright col;
 spcharend(5);
 
-
-
-
-
-% Anciennes
+% Anciens dessins
 
 % Lettre D
-chasse:=6;
+widthx:=6;
 spchar(68)
 x2=x1=-2cx; y5=y1=bo;
 y3=y2=ho;
@@ -433,7 +444,7 @@ cutdraw z5--z1--z2--z3 col;
 spcharend(5);
 
 % Lettre N
-chasse:=6;
+widthx:=6;
 spchar(78)
 x2=x1=-2cx; y4=y5=y1=0cy;
 x3=x2+0.1ux;
@@ -451,7 +462,7 @@ gouache(5,8,doubl);
 spcharend(6);
 
 % Lettre R
-chasse:=6;
+widthx:=6;
 spchar(82)
 x6=x2=x1=-2cx; y1=0cy;
 y3=y2=ho;
@@ -467,7 +478,7 @@ gouache(7,35);
 spcharend(7);
 
 % Lettre N
-chasse:=6;
+widthx:=6;
 spchar(78)
 x2=x1=-2cx; 
 x3=-1.75cx;
@@ -486,7 +497,7 @@ cutdraw z1 //(1,2,r) z2 -- z3 //(3,4,r) z4 -- z5 //(5,6,left) z6 col;
 spcharend(6);
 
 % Lettre K
-chasse:=5;
+widthx:=5;
 spchar(75)
 x2=x1=-1.5cx; y1=0cy;
 y2=h;
@@ -502,7 +513,7 @@ cutdraw z4--z5--z7 col;
 spcharend(7);
 
 % Lettre B
-chasse:=6;
+widthx:=6;
 spchar(66)
 x6=x2=x1=-2cx; y8=y1=bo;
 y3=y2=ho;
@@ -519,8 +530,7 @@ cutdraw z5--z6 col;
 spcharend(8);
 
 % Lettre C
-chasse:=6;
-chasse:=6;
+widthx:=6;
 spchar(67)
     x5=x1=2cx; y1=5cy;
     y3=barheight;
@@ -534,7 +544,7 @@ spchar(67)
 spcharend(5);
 
 % Lettre Z
-chasse:=6;
+widthx:=6;
 spchar(90)
 x1=-2cx;
 y2=y1=ho;
@@ -548,7 +558,7 @@ cutdraw z1--z2--z3--z4--z5--z6 col;
 spcharend(6);
 
 % Lettre H
-chasse:=5;
+widthx:=5;
 spchar(900)
 x5=x2=x1=-2cx;
 x6=x4=x3=2cx;
@@ -564,7 +574,7 @@ gouache(4,0);
 spcharend(6);
 
 % Lettre X
-chasse:=5;
+widthx:=5;
 spchar(88)
 x4=x1=-2.5cx; y4=y2=b;
 x3=x2=2.5cx; y3=y1=h;
@@ -577,7 +587,7 @@ gouache(4,145);
 spcharend(4);
 
 % Lettre R bis
-chasse:=6;
+widthx:=6;
 spchar(162)
 CapHeight:=VanishPointMean:=ho;
 MeanLine:=CapHeight/3; % a faire varier
@@ -607,7 +617,7 @@ cutdraw z5--z7 col;
 spcharend(6);
 
 % Lettre R autre
-chasse:=6;
+widthx:=6;
 spchar(160)
 plafond:=fuitebureau:=ho;
 bureau:=plafond/3; % a faire varier
@@ -638,7 +648,7 @@ cutdraw z5--z7 col;
 spcharend(29);
 
 % Lettre P basé sur R
-chasse:=6;
+widthx:=6;
 spchar(80)
 headline:=fuitebureau:=ho;
 bureau:=plafond/4;
@@ -667,7 +677,7 @@ cutdraw z1 -- z2 -- z3{right} ... z4 ... {dir(180+angle(z8-z9))}z5--z6 col;
 spcharend(10)
 
 % Lettre O
-chasse:=6;
+widthx:=6;
 spchar(79)
 x1:=x3:=Middle;
 x2:=LeftFoot;
@@ -691,5 +701,17 @@ x3:=-3cx;
 y3:=0cy;
 cutdraw z1 //(1,2) z2 col;
 spcharend(3)
+
+% Lettre C version 2
+widthx:=6;
+spchar(790)
+x1:=x3:=Middle;
+x2:=LeftFoot;
+x4:=RightFoot;
+y1:=BaseLine;
+y3:=CapHeight;
+y2:=y4:=MeanLine;
+cutdraw z1 .. z2 .. z3 .. z4 .. cycle col;
+spcharend(6);
 
 end
