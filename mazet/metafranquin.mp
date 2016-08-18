@@ -90,17 +90,17 @@ bo:=baselinepen; % ancien
 h:=capheight; % ancien
 ho:=capheightpen; % ancien
 barheight:=middley; % ancien
-% middlex = ligne centre x
+% middlex = ligne centre x mais pris en charge par la chasse (widthu) de chaque caractère
 % upperbowly = ligne centre y de l'arrondi haut
 % lowerbowly = ligne centre y de l'arrondi bas
-% bridgex = tracé centre x compensé
-% pivotx = ligne de pivotement de l'attraction x
-% pivoty = ligne de pivotement de l'attraction y
-% pivot = point de pivot
-% fuitepoint = point d'attraction
-% fuiteX = ligne d'attraction x
-% fuiteY = ligne d'attraction y
-% fuite = ligne (axe) d'attraction entre point d'attraction et pivot
+bridgex:=middley; % tracé centre x compensé
+pivotx:=bridgex; % ligne de pivotement de l'attraction x
+pivoty:=widthx; % ligne de pivotement de l'attraction y
+pivot:=whatever[pivotx,pivoty]; % point de pivot
+fuiteX:=2widthx; % ligne d'attraction x
+fuiteY:=capheight; % ligne d'attraction y
+fuitepoint:=whatever[fuitex,fuitey] % point d'attraction
+fuite:=whatever[pivot,fuitepoint] % ligne (axe) d'attraction entre point d'attraction et pivot
 enddef;
 
 % Courbes
@@ -655,35 +655,6 @@ cutdraw z1 -- z2 .. z3{dir(angle(z3-z2))} ..tension 1.2.. z4 ..tension 1.2.. {di
 cutdraw z5--z7 col;
 spcharend(29);
 
-% Lettre P basé sur R
-widthu:=6;
-spchar(80)
-headline:=fuitebureau:=ho;
-bureau:=plafond/4;
-baseline:=0;
-boxleft:=-3cx;
-boxright:=2cx;
-fenetre:=balcon/6;
-fuite:=balcon*4;
-stylo:=(fenetre-mur)/2;
-x1:=x2:=x6:=x10:=mur;
-y2:=y3:=plafond;
-y1:=sol;
-x3:=x5:=fenetre;
-y8:=fuitebureau;
-x8:=fuite/2;
-y9:=bureau;
-x9:=stylo;
-z6:=whatever [z1,z2];
-z6:=whatever [z9,z8];
-z5:=whatever [z9,z8];
-z5:=whatever [fenetre];
-y10:=y2-((y2-y6)/2);
-x4:=x7:=balcon;
-z4:=whatever [z10,z8];
-cutdraw z1 -- z2 -- z3{right} ... z4 ... {dir(180+angle(z8-z9))}z5--z6 col;
-spcharend(10)
-
 % Lettre O
 widthu:=6;
 spchar(79)
@@ -710,17 +681,20 @@ y3:=0cy;
 cutdraw z1 //(1,2) z2 col;
 spcharend(3)
 
-% Lettre C version 2
+% Lettre 0 version 2
 widthu:=6;
 spchar(790)
+z8:=(0,3u); 
+z9:=(widthx,18u);
+z10:=whatever [z8,z9];
 fuite:=middley;
 x1:=x3:=middlex;
 y1:=baselineround;
 y3:=capheightround;
-y2:=y4:=fuite;
-x2:=leftsideround;
-x4:=rightsideround;
-cutdraw z1 .. z2 .. z3 .. z4 .. cycle col;
+z2:=(3u,6u);
+z4:=(15u,15u);%whatever [rightsideround,z10];
+cutdraw z8..z9; %(0,3u)--(widthx,18u);
+cutdraw z1{dir(angle(z2-z4))} .. {dir(angle(90))}z2{dir(angle(90))} .. {dir(angle(z4-z2))}z3{dir(angle(z4-z2))} .. {dir(angle(-90))}z4{dir(angle(-90))} .. {dir(angle(z2-z4))}cycle col;
 spcharend(4);
 
 end
