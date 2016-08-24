@@ -59,95 +59,106 @@ prologues:=3; % ps output (remove the % if needed)
 % Mot:='82 78 80';
 
 % Unité
-u:=40pt;
+u:=100pt; % taille globale (agissant en parallèle de defaultscale sur les labels de points lisibles)
+mux:=u; % à faire varier pour la chasse
+muy:=u;
 
-% Construction Mazet
-def construct=
-penx:=3u; % graisse x
-peny:=3u; % graisse y
-penxy=penx+peny/2; % moyenne xy
-roundoverx=penx/2; % débordement pour arrondis x
-roundovery=peny/4; % débordement pour arrondis y
-baseline:=0; % ligne de base
-baselinepen:=baseline+(peny/2); % ligne de base du tracé
-baselineround:=baselinepen-roundovery; % ligne de base avec débordement
-% baselinegouache = dépassement en-dessous baseline pour être gouaché
-capheight:=7peny; % hauteur totale
-capheightpen:=capheight-(peny/2); % hauteur du tracé
-capheightround:=capheightpen+roundovery; % hauteur du tracé avec débordement
-% capheighgouache = dépassement au-dessus capheight pour être gouaché
-leftside:=0; % bord gauche
-leftsidevertical:=leftside+1.5penx; % bord gauche du tracé vertical
-leftsideround:=leftsidevertical-roundoverx; % bord gauche du tracé rond
-rightside:=widthx; % bord droit
-rightsidevertical:=rightside-1.5penx; % bord droit du tracé vertical
-rightsideround:=rightsidevertical+roundoverx; % bord droit du tracé rond
-middley:=capheight/2; % ligne centre y
-ux:=sasx:=penx; % ancien
-uy:=sasy:=peny; % ancien
+% Variables lettrage au Mazet
+def mvariables=
+% mwidth = chasse en u, définie comme variable au début de chaque fig (glyphe)
+mpenx:=3u; % graisse x
+mpeny:=3u; % graisse y
+mpenxy=mpenx+mpeny/2; % moyenne xy
+mroundoverx=mpenx/2; % débordement pour arrondis x
+mroundovery=mpeny/4; % débordement pour arrondis y
+mbaseline:=0; % ligne de base
+mbaselinepen:=mbaseline+(mpeny/2); % ligne de base du tracé
+mbaselineround:=mbaselinepen-mroundovery; % ligne de base avec débordement
+% mbaselinegouache = dépassement en-dessous mbaseline pour être gouaché
+mcapheight:=21u; % hauteur totale
+mcapheightpen:=mcapheight-(mpeny/2); % hauteur du tracé
+mcapheightround:=mcapheightpen+mroundovery; % hauteur du tracé avec débordement
+% capheighgouache = dépassement au-dessus mcapheight pour être gouaché
+mleftside:=0; % bord gauche
+mleftsidevertical:=mleftside+1.5mpenx; % bord gauche du tracé vertical
+mleftsideround:=mleftsidevertical-mroundoverx; % bord gauche du tracé rond
+mrightside:=mwidth; % bord droit
+mrightsidevertical:=mrightside-1.5mpenx; % bord droit du tracé vertical
+mrightsideround:=mrightsidevertical+mroundoverx; % bord droit du tracé rond
+mmiddley:=mcapheight/2; % ligne centre y
+% mmiddlex = ligne centre x mais pris en charge par la chasse (mwidth) de chaque caractère
+% mupperbowly = ligne centre y de l'arrondi haut
+% mlowerbowly = ligne centre y de l'arrondi bas
+mbridgex:=mmiddley; % tracé centre x compensé
+mpivotx:=mbridgex; % ligne de pivotement de l'attraction x
+mpivoty:=mwidth; % ligne de pivotement de l'attraction y
+mpivot:=whatever[mpivotx,mpivoty]; % point de mpivot
+mfuitex:=2mwidth; % ligne d'attraction x
+mfuitey:=mcapheight; % ligne d'attraction y
+mfuitepoint:=whatever[mfuitex,mfuitey] % point d'attraction
+mfuite:=whatever[mpivot,mfuitepoint] % ligne (axe) d'attraction entre point d'attraction et mpivot
+
+ux:=sasx:=mpenx; % ancien
+uy:=sasy:=mpeny; % ancien
 sas:=(sasx+sasy)/2; % ancien
-bo:=baselinepen; % ancien
-h:=capheight; % ancien
-ho:=capheightpen; % ancien
-barheight:=middley; % ancien
-% middlex = ligne centre x mais pris en charge par la chasse (widthu) de chaque caractère
-% upperbowly = ligne centre y de l'arrondi haut
-% lowerbowly = ligne centre y de l'arrondi bas
-bridgex:=middley; % tracé centre x compensé
-pivotx:=bridgex; % ligne de pivotement de l'attraction x
-pivoty:=widthx; % ligne de pivotement de l'attraction y
-pivot:=whatever[pivotx,pivoty]; % point de pivot
-fuiteX:=2widthx; % ligne d'attraction x
-fuiteY:=capheight; % ligne d'attraction y
-fuitepoint:=whatever[fuitex,fuitey] % point d'attraction
-fuite:=whatever[pivot,fuitepoint] % ligne (axe) d'attraction entre point d'attraction et pivot
+bo:=mbaselinepen; % ancien
+h:=mcapheight; % ancien
+ho:=mcapheightpen; % ancien
+barheight:=mmiddley; % ancien
 enddef;
 
-% Courbes
-val:=.84;
-fleche:=0;
+% Variations typographiques
+% w width chasse
+% b boldness graisse
+% i incline inclinaison
+% c contrast contraste
+% p perspective perspective
+% r roundness rondeur
+% t tension tension
+% m middle milieu (en y)
+% o openess ouverture
+% e ends embouts
 
-% Tension
-tens:=.9;
+val:=.84; % courbes
+fleche:=0; % courbes
+tens:=.9; % tension
 
-% Preview
-visual:=2; % 0 = Brut , 1 = avec widthu , 2 = avec widthu + grille
-marg:=0; % Marge en x
+visual:=2; % 0 = sans grille , 1 = avec marges , 2 = avec marge + grille + numéros des points
+marg:=0; % marge en x
 
 % Construction Darius
 def buildarius=
-Baseline:=0;
-CapHeight:=VanishPointMean:=ho;
-MeanLine:=h/2;
+Baseline:=0; % Ligne de base
+CapHeight:=VanishPointMean:=ho; % Hauteur de la lettre
+MeanLine:=h/2; % Milieu de la case
 Middle:=0cx;
-LowerBowl:=CapHeight/4;
+LowerBowl:=CapHeight/4; % Arrondis bas
 Pivot:=Middle;
 LeftCorner:=-2cx;
 RightCorner:=2cx;
-Bridge:=sasx/3;
+Bridge:=sasx/3; % Traverse de la lettre
 enddef;
 
 % Caractère
 def spchar(expr carac)=
   beginfig(carac)
-  middlex:=(widthu*penx)/2;
-  widthx:=widthu*penx;
+  mmiddlex:=(mwidth*mux)/2;
     def cx=
-        penx+middlex;
+        10u+mmiddlex; % multiplicateur de u à définir
     enddef;
     def cy=
-        peny;
+        1000; % multiplicateur de u à définir
     enddef;
-    pair A,B;
-    A:=(middlex,0u);
-    B:=(middlex,7u);
-    pickup pencircle xscaled penx yscaled peny;
+    pair A,B; % centre vertical pour miroir
+    A:=(mmiddlex,0u);
+    B:=(mmiddlex,7u);
+    pickup pencircle xscaled mpenx yscaled mpeny;
     linejoin:=mitered;
-construct;
-buildarius;
+mvariables; % injection de toutes les variables de lettrage
+% buildarius; % ancien
 enddef;
 
-% Courbe tensions
+% Tensions des droites pour les incurver
 def crb(suffix i,j,val)=
     if x.i<x.j:
         if y.i<y.j:
@@ -160,9 +171,9 @@ def crb(suffix i,j,val)=
 enddef;
 
 % Grille
-def col=
+def col= % gris de la lettre
     if visual>1:
-         withcolor .6white
+         withcolor .5white
     else:
     fi
 enddef;
@@ -170,33 +181,32 @@ enddef;
 def spcharend(suffix n_points)=
 pickup pencircle scaled 1;
 
-if visual>=1:
-    draw (-marg*ux,-2*uy)--((marg+widthu)*ux,-2*uy)--((marg+widthu)*ux,h+3u)--(-marg*ux,h+3u)-- cycle withcolor white;
+if visual>=1: % rectangle de bord
+    draw (-marg*u,-2*u)--((marg+mwidth)*u,-2*u)--((marg+mwidth)*u,h+u)--(-marg*u,h+u)-- cycle withcolor blue;
     fi
     if visual>1:  
-    pickup pencircle scaled 1.2
-      for i=0 upto widthu:
-        draw (i*ux,h)--(i*ux,0) withcolor blue;
-    endfor
-      for i=0 upto 7:
-        draw (0*ux,i*uy)--(widthu*ux,i*uy) withcolor blue;
+    pickup pencircle scaled 1
+      for i=0 upto mwidth: % grille verticale
+        draw (i*u,mcapheight)--(i*u,0) withcolor red;
+      endfor
+      for i=0 upto mcapheight/u: % grille horizontale
+        draw (0,i*u)--(mwidth*u,i*u) withcolor red;
       endfor;
-
-    defaultscale :=2.2;
-    for i=1 upto n_points:
+    defaultscale :=4; % agit sur la taille des labels de points
+    for i=1 upto n_points: % entrée manuelle du nombre de points glyphe par glyphe (à automatiser?)
         dotlabels.top([i]);
     endfor;
 fi
 endfig
 enddef;
 
-def PVisual(suffix visual,i,j,k)=
+def PVisual(suffix visual,i,j,k)= % ancien
   if visual>1:
     withcolor .6white;
   fi
 enddef;
 
-% Courbes spirou
+% Courbes spirou % ancien
 def spirou_soft(suffix i,j) =
   if x.i<x.j:
     cutdraw z.i{val.u,x.j-x.i}
@@ -228,12 +238,12 @@ def spirou_crescent(suffix i,j,k) =
     col
 enddef;
 
-% Pen
+% Pen % ancien
 def pen_form(expr type_pen) =
   pickup type_pen scaled sas;
 enddef;
 
-% Diagonale
+% Diagonale % ancien
 def diago (suffix i,j,deg)=
     sasxdia=sasx-.8u;
     sasydia=sasy-.8u;
@@ -252,68 +262,23 @@ enddef;
 defaultscale:=.2;
 
 
-
-% ## Vocabulaire anatomique des lettres Darius
-
-% CapHeight = Hauteur de la lettre
-% UpperBowl
-% LowerBowl
-% BaseLine = Ligne de base
-% Bridge = Traverse de la lettre
-% MeanLine = Milieu de la case
-% LowerBowl = Arrondis bas
-% LeftCorner
-% RighCorner
-% Pivot
-% Middle
-% VanishingPoint
-% Fuite = Point d'attraction de la courbe
-
-
-% ## Vocabulaire anatomique des lettres 2
-
-% baseline = ligne de base y
-% baselinepen = ligne de base du tracé y
-% baselinegouache = dépassement en-dessous baseline pour être gouaché y
-% capheight = hauteur totale y
-% capheightpen = hauteur du tracé de la lettre y
-% capheighgouache = dépassement au-dessus capheight pour être gouaché y
-% leftside = bord gauche
-% leftsidepen = bord gauche du tracé
-% rightside = bord droit
-% rightsidepen = bord droit du tracé
-
-% middley = ligne centre y
-% middlex = ligne centre x
-% upperbowly = ligne centre y de l'arrondi haut
-% lowerbowly = ligne centre y de l'arrondi bas
-% bridgex = tracé centre x compensé
-
-% pivotx = ligne de pivotement de l'attraction x
-% pivoty = ligne de pivotement de l'attraction y
-% pivot = point de pivot
-% fuitepoint = point d'attraction
-% fuiteX = ligne d'attraction x
-% fuiteY = ligne d'attraction y
-
-
 % ## Types de lettres
 
 % Droitues = E, F, H, I, L, T, 
 % Pentues = A, K, M, N, V, W, X, Y, Z, 1, 4, 7
-% Rondues = C, J, G, O, P, Q, R, 5, 6, 9, 0
+% Rondues = B, C, D, J, G, O, P, Q, R, U, 2, 3, 5, 6, 9, 0
 % Flexues = S, 8
 
 
 % ## Droitues
 
 % Lettre E
-widthu:=6;
+mwidth:=6;
 spchar(69)
 x4:=x1:=RightCorner;
 y1:=y2:=bo;
 x5:=x3:=x2:=LeftCorner;
-y4:=y3:=CapHeight;
+y4:=y3:=mcapheight;
 y6:=y5:=MeanLine + .25ux;
 x6:=RightCorner- 0.5ux;
 cutdraw z1 -- z2 -- z3 -- z4 col;
@@ -321,13 +286,13 @@ cutdraw z5 -- z6 col;
 spcharend(6);
 
 % Lettre F
-widthu:=6;
+mwidth:=6;
 spchar(70)
 x4:=x1:=RightCorner;
 y1:=bo;
 x5:=x3:=x2:=LeftCorner;
-y2:=Baseline;
-y4:=y3:=CapHeight;
+y2:=mbaseline;
+y4:=y3:=mcapheight;
 y6:=y5:=MeanLine + .25ux;
 x6:=RightCorner- 0.5ux;
 cutdraw z2 -- z3 -- z4 col;
@@ -335,10 +300,10 @@ cutdraw z5 -- z6 col;
 spcharend(6);
 
 % Lettre H
-widthu:=6;
+mwidth:=6;
 spchar(72)
 x6:=x4:=x1:=RightCorner;
-y2:=y1:=BaseLine;
+y2:=y1:=mbaseline;
 x5:=x3:=x2:=LeftCorner;
 y4:=y3:=h;
 y6:=y5:=MeanLine - 1ux;
@@ -348,16 +313,16 @@ cutdraw z5 -- z6 col;
 spcharend(6);
 
 % Lettre I
-widthu:=3;
+mwidth:=3;
 spchar(73)
 x2:=x1:=Middle;
 y2:=h;
-y3:=BaseLine;
+y3:=mbaseline;
 cutdraw z1 -- z2 col; 
 spcharend(6);
 
 % Lettre L
-widthu:=5;
+mwidth:=5;
 spchar(76)
 x4:=x1:=RightCorner - .5ux;
 y1:=bo;
@@ -368,10 +333,10 @@ cutdraw z1 -- z2 -- z3  col;
 spcharend(6);
 
 % Lettre T
-widthu:=5;
+mwidth:=5;
 spchar(84)
 x2:=x1:=Middle;
-y1:=BaseLine;
+y1:=mbaseline;
 y3:=y4:=y2:=ho;
 x3:=LeftCorner - .5ux;
 x4:=RightCorner + .5ux;
@@ -383,12 +348,12 @@ spcharend(4);
 % Pentues
 
 % Lettre A
-widthu:=7;
+mwidth:=7;
 spchar(65)
 x1=LeftCorner - .5ux; 
-y1=Baseline;
+y1=mbaseline;
 x2=Middle - Bridge; 
-y3=y2=CapHeight;
+y3=y2=mcapheight;
 x3=Middle;
 %y5=y4=MeanLine - 1.75ux;
 x5=.3[x1,x2];
@@ -406,7 +371,7 @@ gouache(3, 0, sup);
 spcharend(5);
 
 % Lettre M
-widthu:=7;
+mwidth:=7;
 spchar(77)
 x2=x1=LeftCorner - .4ux; 
 x3=x2 + Bridge;
@@ -424,7 +389,7 @@ gouache(7,0);
 spcharend(7);
 
 % Lettre V
-widthu:=7;
+mwidth:=7;
 spchar(86)
 x1=LeftCorner - .5ux; 
 y1=h;
@@ -441,7 +406,7 @@ spcharend(5);
 % Anciens dessins
 
 % Lettre D
-widthu:=6;
+mwidth:=6;
 spchar(68)
 x2=x1=-2cx; y5=y1=bo;
 y3=y2=ho;
@@ -452,7 +417,7 @@ cutdraw z5--z1--z2--z3 col;
 spcharend(5);
 
 % Lettre N
-widthu:=6;
+mwidth:=6;
 spchar(78)
 x2=x1=-2cx; y4=y5=y1=0cy;
 x3=x2+0.1ux;
@@ -470,7 +435,7 @@ gouache(5,8,doubl);
 spcharend(6);
 
 % Lettre R
-widthu:=6;
+mwidth:=6;
 spchar(82)
 x6=x2=x1=-2cx; y1=0cy;
 y3=y2=ho;
@@ -486,7 +451,7 @@ gouache(7,35);
 spcharend(7);
 
 % Lettre N
-widthu:=6;
+mwidth:=6;
 spchar(78)
 x2=x1=-2cx; 
 x3=-1.75cx;
@@ -505,7 +470,7 @@ cutdraw z1 //(1,2,r) z2 -- z3 //(3,4,r) z4 -- z5 //(5,6,left) z6 col;
 spcharend(6);
 
 % Lettre K
-widthu:=5;
+mwidth:=5;
 spchar(75)
 x2=x1=-1.5cx; y1=0cy;
 y2=h;
@@ -521,9 +486,9 @@ cutdraw z4--z5--z7 col;
 spcharend(7);
 
 % Lettre B
-widthu:=6;
+mwidth:=18;
 spchar(66)
-x6=x2=x1=-2cx; y8=y1=bo;
+x6=x2=x1=-2.5cx; y8=y1=bo;
 y3=y2=ho;
 x8=x3=.8cx; y6=y5=barheight -0cy;
 x5=0.5cx;
@@ -538,7 +503,7 @@ cutdraw z5--z6 col;
 spcharend(8);
 
 % Lettre C
-widthu:=6;
+mwidth:=6;
 spchar(67)
     x5=x1=2cx; y1=5cy;
     y3=barheight;
@@ -552,7 +517,7 @@ spchar(67)
 spcharend(5);
 
 % Lettre Z
-widthu:=6;
+mwidth:=6;
 spchar(90)
 x1=-2cx;
 y2=y1=ho;
@@ -566,7 +531,7 @@ cutdraw z1--z2--z3--z4--z5--z6 col;
 spcharend(6);
 
 % Lettre H
-widthu:=5;
+mwidth:=5;
 spchar(900)
 x5=x2=x1=-2cx;
 x6=x4=x3=2cx;
@@ -582,7 +547,7 @@ gouache(4,0);
 spcharend(6);
 
 % Lettre X
-widthu:=5;
+mwidth:=5;
 spchar(88)
 x4=x1=-2.5cx; y4=y2=b;
 x3=x2=2.5cx; y3=y1=h;
@@ -595,21 +560,21 @@ gouache(4,145);
 spcharend(4);
 
 % Lettre R bis
-widthu:=6;
+mwidth:=6;
 spchar(162)
-CapHeight:=VanishPointMean:=ho;
-MeanLine:=CapHeight/3; % a faire varier
-Baseline:=0;
+mcapheight:=VanishPointMean:=ho;
+MeanLine:=mcapheight/3; % a faire varier
+mbaseline:=0;
 LeftFoot:=-2cx;% a faire varier
 RightFoot:=2cx;% a faire varier
 Middle:=0cx;% a faire varier
 VanishPoint:=RightFoot*2;% a faire varier
 Pivot:=(Middle-LeftFoot)/2;
 x1:=x2:=x6:=x10:=LeftFoot;
-y3:=y2:=CapHeight;
-y1:=y7:=BaseLine;
+y3:=y2:=mcapheight;
+y1:=y7:=mbaseline;
 x3:=x5:=Middle;
-y8:=CapHeight/1.5; % a faire varier entre MeanLine et CapHeight ou CapHeight avec un diviseur
+y8:=mcapheight/1.5; % a faire varier entre MeanLine et mcapheight ou mcapheight avec un diviseur
 x8:=x11:=VanishPoint/2;
 y9:=MeanLine;
 x9:=Pivot;
@@ -618,14 +583,14 @@ z5=whatever [z9,z8];
 z5=whatever [Middle];
 y10:=y2-((y2-y6)/2);
 x4:=x7:=RightFoot;
-y11:=CapHeight-((CapHeight-y8)/2);
+y11:=mcapheight-((mcapheight-y8)/2);
 z4:=whatever [z11,z10];
 cutdraw z1 -- z2 .. z3{dir(angle(z3-z2))} ..tension 1.2.. z4 ..tension 1.2.. {dir(angle(z9-z8))}z5 .. z6 col;
 cutdraw z5--z7 col;
 spcharend(6);
 
 % Lettre R autre
-widthu:=6;
+mwidth:=6;
 spchar(160)
 plafond:=fuitebureau:=ho;
 bureau:=plafond/3; % a faire varier
@@ -656,44 +621,56 @@ cutdraw z5--z7 col;
 spcharend(29);
 
 % Lettre O
-widthu:=6;
+mwidth:=6;
 spchar(79)
 x1:=x3:=Middle;
 x2:=LeftFoot;
 x4:=RightFoot;
-y1:=BaseLine;
-y3:=CapHeight;
+y1:=mbaseline;
+y3:=mcapheight;
 y2:=y4:=MeanLine;
 cutdraw z1 .. z2 .. z3 .. z4 .. cycle col;
 spcharend(6);
 
 % Lettre test 
+mwidth:=6;
 spchar(666)
-def //(suffix i,j) =
-.. (.5[x.i,x.j]-.2ux, .5[y.i,y.j]) ..
-enddef;
 x1:=1cx;
 y1:=0cy;
 x2:=1cx;
-y2:=7cy;
+y2:=21cy;
 x3:=-3cx;
 y3:=0cy;
-cutdraw z1 //(1,2) z2 col;
+cutdraw z1 -- z2 -- z3 col;
+spcharend(3)
+
+mwidth:=6;
+  beginfig(667)
+  mmiddlex:=(mwidth*u)/2;
+  pickup pencircle xscaled mpenx yscaled mpeny;
+  linejoin:=mitered;
+mvariables; % injection de toutes les variables de lettrage
+x1:=1mux;
+y1:=0muy;
+x2:=1mux;
+y2:=21muy;
+x3:=-3mux;
+y3:=0muy;
+cutdraw z1 -- z2 -- z3 col;
 spcharend(3)
 
 % Lettre 0 version 2
-widthu:=6;
+mwidth:=6;
 spchar(790)
 z8:=(0,3u); 
-z9:=(widthx,18u);
-z10:=whatever [z8,z9];
-fuite:=middley;
-x1:=x3:=middlex;
-y1:=baselineround;
-y3:=capheightround;
-z2:=(3u,6u);
-z4:=(15u,15u);%whatever [rightsideround,z10];
-cutdraw z8..z9; %(0,3u)--(widthx,18u);
+z9:=(mwidth,18u);
+mfuite:=[z8,z9];
+x1:=x3:=mmiddlex;
+y1:=mbaselineround;
+y3:=mcapheightround;
+z2:=whatever [letfsideround,mfuite]; %(3u,6u);
+z4:=whatever [mrightsideround,mfuite]; %(15u,15u);%;
+cutdraw mfuite; %(0,3u)--(mwidth,18u);
 cutdraw z1{dir(angle(z2-z4))} .. {dir(angle(90))}z2{dir(angle(90))} .. {dir(angle(z4-z2))}z3{dir(angle(z4-z2))} .. {dir(angle(-90))}z4{dir(angle(-90))} .. {dir(angle(z2-z4))}cycle col;
 spcharend(4);
 
