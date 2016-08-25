@@ -1,73 +1,65 @@
 prologues:=3; % ps output (remove the % if needed)
-% outputtemplate := "%j%c.svg"; % exporter en svg.
 
-% Unité
+% Échelle
 u:=100pt; % taille globale (agissant en parallèle de defaultscale sur les labels de points lisibles)
-mux:=u; % à faire varier pour la chasse
-muy:=u;
+defaultscale:=.2;
 
 % Variables lettrage au Mazet
 def mvariables=
+xu:=u; % unité de taille de base, à faire varier pour la chasse
+yu:=u; % unité de taille de base, à faire varier pour la chasse
+ybaseline:=0; % ligne de base
+ycapheight:=21u; % hauteur totale
 % mwidth = chasse en u, définie comme variable au début de chaque fig (glyphe)
-mpenx:=3u; % graisse x
-mpeny:=3u; % graisse y
-mpenxy=mpenx+mpeny/2; % moyenne xy
-mroundoverx=mpenx/2; % débordement pour arrondis x
-mroundovery=mpeny/4; % débordement pour arrondis y
-mbaseline:=0; % ligne de base
-mbaselinepen:=mbaseline+(mpeny/2); % ligne de base du tracé
-mbaselineround:=mbaselinepen-mroundovery; % ligne de base avec débordement
-% mbaselinegouache = dépassement en-dessous mbaseline pour être gouaché
-mcapheight:=21u; % hauteur totale
-mcapheightpen:=mcapheight-(mpeny/2); % hauteur du tracé
-mcapheightround:=mcapheightpen+mroundovery; % hauteur du tracé avec débordement
-% capheighgouache = dépassement au-dessus mcapheight pour être gouaché
-mleftside:=0; % bord gauche
-mleftsidevertical:=mleftside+1.5mpenx; % bord gauche du tracé vertical
-mleftsideround:=mleftsidevertical-mroundoverx; % bord gauche du tracé rond
-mrightside:=mwidth; % bord droit
-mrightsidevertical:=mrightside-1.5mpenx; % bord droit du tracé vertical
-mrightsideround:=mrightsidevertical+mroundoverx; % bord droit du tracé rond
-mmiddley:=mcapheight/2; % ligne centre y
-% mmiddlex = ligne centre x mais pris en charge par la chasse (mwidth) de chaque caractère
-% mupperbowly = ligne centre y de l'arrondi haut
-% mlowerbowly = ligne centre y de l'arrondi bas
-mbridgex:=mmiddley; % tracé centre x compensé
-mpivotx:=mbridgex; % ligne de pivotement de l'attraction x
-mpivoty:=mwidth; % ligne de pivotement de l'attraction y
-mpivot:=whatever[mpivotx,mpivoty]; % point de mpivot
-mfuitex:=2mwidth; % ligne d'attraction x
-mfuitey:=mcapheight; % ligne d'attraction y
-mfuitepoint:=whatever[mfuitex,mfuitey] % point d'attraction
-mfuite:=whatever[mpivot,mfuitepoint] % ligne (axe) d'attraction entre point d'attraction et mpivot
+xpen:=3u; % graisse x
+ypen:=3u; % graisse y
+
+yleg:=ybaseline+ypen/2; % ligne de base du tracé horizontal
+yarm:=ycapheight-ypen/2; % hauteur du tracé haut horizontal
+ybaselineround:=yleg-ypen/2; % ligne de base avec débordement
+ycapheightround:=yarm+ypen/2; % hauteur du tracé avec débordement
+ybaselinegouache:=ybaseline-ypen/2 % dépassement en-dessous mbaseline pour être gouaché
+ycapheighgouache:=ycapheight+ypen/2 % dépassement au-dessus mcapheight pour être gouaché
+
+xleftside:=0; % bord gauche
+xrightside:=xwidth; % bord droit
+xleftstem:=xleftside+xpen; % bord gauche du tracé vertical
+xrightstem:=xrightside-xpen; % bord droit du tracé vertical
+xleftround:=xleftstem-xpen; % bord gauche du tracé rond
+xrightround:=mrightstem+xpen; % bord droit du tracé rond
+
+xcenter:=xwidth/2; % ligne centre x
+ycenter:=ycapheight/2; % ligne centre y
+yupbar:=ycenter+ypen; % tracé centre x compensé haut
+ylowbar:=ycenter-ypen; % tracé centre x compensé bas
+xupbowl:=xrightround-xpen/2; % ligne centre y de l'arrondi haut
+xlowbowl:=xrightround; % ligne centre y de l'arrondi bas
+yupbowl:=ycapheight-((ycapheight-ybar)/2); % ligne centre x de l'arrondi haut
+ylowbowl:=ybaseline+(ybar/2); % ligne centre x de l'arrondi bas
+
+% xpivot:=xcenter; % ligne de pivotement de l'attraction x
+% ypivot:=ycenter; % ligne de pivotement de l'attraction y
+zpivot:=whatever[xcenter,ycenter]; % point de pivot
+% xfuite:=2xwidth; % ligne d'attraction x
+% yfuite:=ycapheight; % ligne d'attraction y
+zfuitepoint:=whatever[2xwidth,ycapheight] % point d'attraction
+zfuite:=whatever[zpivot,zfuitepoint] % ligne (axe) d'attraction entre point d'attraction et pivot
 enddef;
 
-val:=.84; % courbes
-fleche:=0; % courbes
-tens:=.9; % tension
+mcurve:=.84; % courbes
+mfleche:=0; % courbes
+mtension:=.9; % tension
 
-visual:=2; % 0 = sans grille , 1 = avec marges , 2 = avec marge + grille + numéros des points
-marg:=0; % marge en x
+mvisual:=2; % 0 = sans grille , 1 = avec marges , 2 = avec marge + grille + numéros des points
+mmarg:=0; % marge en x
 
-% Caractère
+% Glyphe début
 def spchar(expr carac)=
   beginfig(carac)
-  mmiddlex:=(mwidth*mux)/2;
-    def cx=
-        10u+mmiddlex; % multiplicateur de u à définir
-    enddef;
-    def cy=
-        1000; % multiplicateur de u à définir
-    enddef;
-    pair A,B; % centre vertical pour miroir
-    A:=(mmiddlex,0u);
-    B:=(mmiddlex,7u);
-    pickup pencircle xscaled mpenx yscaled mpeny;
-    linejoin:=mitered;
-mvariables; % injection de toutes les variables de lettrage
+  mvariables; % injection de toutes les variables de lettrage
 enddef;
 
-% Grille
+% Grille et glyphe fin
 def col= % gris de la lettre
     if visual>1:
          withcolor .5white
@@ -75,29 +67,31 @@ def col= % gris de la lettre
     fi
 enddef;
 
-def spcharend(suffix n_points)=
+def spcharend(suffix mpoints)=
 pickup pencircle scaled 1;
 
 if visual>=1: % rectangle de bord
-    draw (-marg*u,-2*u)--((marg+mwidth)*u,-2*u)--((marg+mwidth)*u,h+u)--(-marg*u,h+u)-- cycle withcolor blue;
+    draw (-mmarg*u,-2*u)--((mmarg+widthx)*u,-2*u)--((mmarg+widthx)*u,ycapheight+u)--(-mmarg*u,ycapheight+u)-- cycle withcolor blue;
     fi
-    if visual>1:  
+    if mvisual>1:  
     pickup pencircle scaled 1
-      for i=0 upto mwidth: % grille verticale
-        draw (i*u,mcapheight)--(i*u,0) withcolor red;
+      for i=0 upto xwidth: % grille verticale
+        draw (i*u,ycapheight)--(i*u,0) withcolor red;
       endfor
-      for i=0 upto mcapheight/u: % grille horizontale
-        draw (0,i*u)--(mwidth*u,i*u) withcolor red;
+      for i=0 upto ycapheight/u: % grille horizontale
+        draw (0,i*u)--(xwidth*u,i*u) withcolor red;
       endfor;
     defaultscale :=4; % agit sur la taille des labels de points
-    for i=1 upto n_points: % entrée manuelle du nombre de points glyphe par glyphe (à automatiser?)
+    for i=1 upto mpoints: % entrée manuelle du nombre de points glyphe par glyphe (à automatiser?)
         dotlabels.top([i]);
     endfor;
 fi
 endfig
 enddef;
 
-defaultscale:=.2;
+% ## Pen
+pickup pencircle xscaled xpen yscaled ypen;
+linejoin:=mitered;
 
 % ## Droitues
 % Lettre E
