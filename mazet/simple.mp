@@ -1,5 +1,5 @@
 prologues:=3;
-u:=50pt;
+u:=12pt;
 
 % Variables
 
@@ -9,8 +9,8 @@ xu:=u; % unité de taille de base, à faire varier pour la chasse
 yu:=u; % unité de taille de base, à faire varier pour la chasse
 ybaseline:=0yu; % ligne de base
 ycapheight:=21yu; % hauteur totale
-xpen:=3xu; % graisse x
-ypen:=3yu; % graisse y
+xpen:=4xu; % graisse x
+ypen:=4yu; % graisse y
 
 yleg:=ybaseline+ypen/2; % ligne de base du tracé horizontal
 yarm:=ycapheight-ypen/2; % hauteur du tracé haut horizontal
@@ -31,13 +31,25 @@ xendoblique:=xpen/3; % aleur de largeur d'embouts obliques
 xcenter:=xwidth/2; % ligne centre x
 ycenter:=ycapheight/2; % ligne centre y
 yupbar:=ycenter+ypen; % tracé centre x compensé haut
-ylowbar:=ycenter-ypen; % tracé centre x compensé bas
+ylowbar:=ycenter-ypen/2; % tracé centre x compensé bas
 xbigbowl:=xrightround-xpen/4; % ligne centre x de l'arrondi grand
 xsmallbowl:=xrightround-xpen/2; % ligne centre x de l'arrondi petit
 yupbowl:=ycapheight-((ycapheight-ylowbar)/2); % ligne centre y de l'arrondi haut
 ylowbowl:=ybaseline+(ybar/2); % ligne centre y de l'arrondi bas
 xbowlattach:=xcenter; % le point d'attache de l'horizontale tangente au bowl
 xbridge:=xpen/1.5; % valeur d'écartement des pointes
+
+xpivot:=5u; % ligne de pivotement de l'attraction x
+ypivot:=ycenter; % ligne de pivotement de l'attraction y
+xfuite:=2xwidth; % ligne d'attraction x
+yfuite:=ycapheight/1.2; % ligne d'attraction y
+% zpivot=whatever[xcenter,ycenter]; % point de pivot
+% zfuitepoint=whatever[xfuite,yfuite] % point d'attraction
+% zfuite=whatever[zpivot,zfuitepoint] % ligne (axe) d'attraction entre point d'attraction et pivot
+
+mcurve:=0.85; % courbes
+mcurl:=0; % fin des courbes
+mtension:=.9; % tension des pseudo droites
 
 pickup pencircle yscaled xpen xscaled ypen;
 linejoin:=mitered;
@@ -49,16 +61,15 @@ def mcolor= % gris de la lettre
 enddef;
 
 def mgrille(suffix mpoints)= % grille
-pickup pencircle scaled .5;
+pickup pencircle scaled 0.2;
 for i=0 upto xwidth/u: % grille verticale
   draw (xleftside+i*u,ycapheight) -- (xleftside+i*u,ybaseline) withcolor .8white;
 endfor
 for i=0 upto ycapheight/u: % grille horizontale
   draw (xleftside,i*u) -- (xrightside,i*u) withcolor .8white;
 endfor;
-defaultscale :=5; % agit sur la taille des labels de points
 for i=1 upto mpoints: % entrée manuelle du nombre de points glyphe par glyphe (à automatiser?)
-  dotlabels.top([i]);
+  dotlabels.bot([i]);
 endfor;
 enddef;
 
@@ -108,21 +119,30 @@ cutdraw z1 .. z2 .. z3 .. z4 .. cycle mcolor;
 mgrille(4);
 endfig;
 
-% Lettre R
+% Lettre R, reste à relier fuite, pivot, et tension dans une seule variable
 beginfig(33)
 xwidth:=15u;
 mvariables;
 x1=x2=x6=x10=xleftstem;
 x3=x5=xbowlattach;
-x4=x7=xbigbowl;
+x4=xbigbowl;
+x7=xbigbowl+xpen/4;
 y1=ybaseline;
 y7=ybaselinegouache;
-y6=y5=ylowbar;
-y4=yupbowl;
 y2=y3=yarm;
-cutdraw z1 -- z2 -- z3 .. z4 .. z5 -- z6 mcolor;
+y8=yfuite;
+y9=ylowbar;
+x9=xpivot+1u; 
+x8=x11=xfuite;
+y10=y2-((y2-y6)/2);
+y11=ycapheight-((ycapheight-yfuite)/2);
+z6=whatever[z9,z8];
+z5=whatever[z9,z8];
+z5=whatever[xbowlattach];
+z4=whatever[z11,z10];
+cutdraw z1 -- z2 -- z3{dir(angle(z3-z2))} ..tension (mcurve).. z4 ..tension (mcurve).. {dir(angle(z9-z8))}z5 -- z6 mcolor;
 cutdraw z5 -- z7 mcolor;
-mgrille(7);
+mgrille(11);
 endfig;
 
 end
