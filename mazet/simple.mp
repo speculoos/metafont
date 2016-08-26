@@ -47,7 +47,7 @@ yfuite:=ycapheight/1.2; % ligne d'attraction y
 % zfuitepoint=whatever[xfuite,yfuite] % point d'attraction
 % zfuite=whatever[zpivot,zfuitepoint] % ligne (axe) d'attraction entre point d'attraction et pivot
 
-mcurve:=0.85; % courbes
+mcurve:=.9; % courbes
 mcurl:=0; % fin des courbes
 mtension:=.9; % tension des pseudo droites
 
@@ -105,7 +105,7 @@ cutdraw z5 -- z6 mcolor;
 mgrille(6);
 endfig;
 
-% Lettre O
+% Lettre O, balance y2 et y4, ajouter un jeu de tension sans doute
 beginfig(32)
 xwidth:=15u;
 mvariables;
@@ -113,9 +113,10 @@ x1=x3=xcenter;
 x2=xleftround;
 x4=xrightround;
 y1=ybaselineround;
-y2=y4=ycenter;
+y2=ycenter-ypen/2;
+y4=ycenter+ypen/2;
 y3=ycapheightround;
-cutdraw z1 .. z2 .. z3 .. z4 .. cycle mcolor;
+cutdraw z1 ..tension (mcurve).. z2{up} ..tension (mcurve+.3).. z3 ..tension (mcurve).. z4{down} ..tension (mcurve+.3).. cycle mcolor;
 mgrille(4);
 endfig;
 
@@ -143,6 +144,22 @@ z4=whatever[z11,z10];
 cutdraw z1 -- z2 -- z3{dir(angle(z3-z2))} ..tension (mcurve).. z4 ..tension (mcurve).. {dir(angle(z9-z8))}z5 -- z6 mcolor;
 cutdraw z5 -- z7 mcolor;
 mgrille(11);
+endfig;
+
+% Lettre C, idem O + appareiller les embouts
+beginfig(34)
+xwidth:=15u;
+mvariables;
+x1=x3=xcenter;
+x2=xleftround;
+y1=ybaselineround;
+y2=ycenter;
+y3=ycapheightround;
+x4=x5=xrightround;
+y5=4u;
+y4=16u;
+cutdraw z5 ..tension (mcurve).. z1 ..tension (mcurve).. z2{up} ..tension (mcurve).. z3 ..tension (mcurve).. {down}z4 mcolor;
+mgrille(5);
 endfig;
 
 end
