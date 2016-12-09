@@ -1,0 +1,15 @@
+This is MetaPost, version 1.999 (TeX Live 2015) (kpathsea version 6.2.1)  13 JUN 2016 14:51
+**S.mp
+(/usr/local/texlive/2015/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2015/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./S.mp (../param.mp
+! I can't open file `def'.
+l.35 input def
+              
+Please type another input file name
+! Emergency stop.
+l.35 input def
+              
+*** (job aborted, file error in nonstop mode)
+
+
