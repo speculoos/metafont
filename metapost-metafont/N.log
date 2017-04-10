@@ -1,0 +1,279 @@
+This is MetaPost, version 1.999 (TeX Live 2015) (kpathsea version 6.2.1)  13 JUN 2016 14:53
+**UC/N.mp
+(/usr/local/texlive/2015/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2015/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./UC/N.mp (./UC/../param.mp
+(./def.mp))
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.15 gouache(1,0);
+                  
+? 
+>> 107.59552
+>> curve
+! Not implemented: (known numeric)/(unknown numeric).
+<to be read again> 
+                   ;
+gouache->Ysc:=sasy/curve;
+                         if(SUFFIX2)=refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.15 gouache(1,0);
+                  
+? 
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.15 gouache(1,0);
+                  
+? 
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.15 gouache(1,0);
+                  
+? 
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.15 gouache(1,0);
+                  
+? 
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.15 gouache(1,0);
+                  
+? 
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.15 gouache(1,0);
+                  
+? 
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.15 gouache(1,0);
+                  
+? 
+>> (0,0,1,0,0,curve)
+! Transform components aren't all known.
+<to be read again> 
+                   rotated
+gouache->...ircle.xscaled.sasx.yscaled.Ysc.rotated
+                                                  (SUFFIX1);undraw.z(SUFFIX0...
+<to be read again> 
+                   ;
+l.15 gouache(1,0);
+                  
+? 
+! Missing argument to gouache.
+<to be read again> 
+                   ;
+l.18 gouache(6,0);
+                  
+? 
+>> 107.59552
+>> curve
+! Not implemented: (known numeric)/(unknown numeric).
+<to be read again> 
+                   ;
+gouache->Ysc:=sasy/curve;
+                         if(SUFFIX2)=refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.18 gouache(6,0);
+                  
+? 
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=
+                                     refl:pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.18 gouache(6,0);
+                  
+? 
+>> -refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+<to be read again> 
+                   ;
+l.18 gouache(6,0);
+                  
+? 
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...tedabout(A,B)rotated0;elseif(SUFFIX2)=
+                                                  sup:Xsc:=sasx*2;pickup.pen...
+<to be read again> 
+                   ;
+l.18 gouache(6,0);
+                  
+? 
+>> -sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.18 gouache(6,0);
+                  
+? 
+! An expression can't begin with `='.
+<inserted text> 
+                0
+<to be read again> 
+                   =
+gouache->...IX0)shifted(0,sasy/2);elseif(SUFFIX2)=
+                                                  doubl:Xsc:=sasx*2;pickup.p...
+<to be read again> 
+                   ;
+l.18 gouache(6,0);
+                  
+? 
+>> -doubl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...ifted(0,sasy/2);elseif(SUFFIX2)=doubl:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+<to be read again> 
+                   ;
+l.18 gouache(6,0);
+                  
+? 
+>> (0,0,1,0,0,curve)
+! Transform components aren't all known.
+<to be read again> 
+                   rotated
+gouache->...ircle.xscaled.sasx.yscaled.Ysc.rotated
+                                                  (SUFFIX1);undraw.z(SUFFIX0...
+<to be read again> 
+                   ;
+l.18 gouache(6,0);
+                  
+? 
+>> 107.59552
+>> curve
+! Not implemented: (known numeric)/(unknown numeric).
+<to be read again> 
+                   ;
+gouache->Ysc:=sasy/curve;
+                         if(SUFFIX2)=refl:pickup.pencircle.xscaled.sasx.ysca...
+l.19 gouache(2,18,doubl)
+                        ;
+? 
+>> doubl-refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+l.19 gouache(2,18,doubl)
+                        ;
+? 
+>> doubl-sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+l.19 gouache(2,18,doubl)
+                        ;
+? 
+>> (0,0,1,0,0,curve)
+! Transform components aren't all known.
+<to be read again> 
+                   rotated
+gouache->...circle.xscaled.Xsc.yscaled.Ysc.rotated
+                                                  (SUFFIX1);undraw.z(SUFFIX0...
+l.19 gouache(2,18,doubl)
+                        ;
+? 
+>> 107.59552
+>> curve
+! Not implemented: (known numeric)/(unknown numeric).
+<to be read again> 
+                   ;
+gouache->Ysc:=sasy/curve;
+                         if(SUFFIX2)=refl:pickup.pencircle.xscaled.sasx.ysca...
+l.20 gouache(5,8,doubl)
+                       ;
+? 
+>> doubl-refl
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->Ysc:=sasy/curve;if(SUFFIX2)=refl:
+                                          pickup.pencircle.xscaled.sasx.ysca...
+l.20 gouache(5,8,doubl)
+                       ;
+? 
+>> doubl-sup
+! Unknown relation will be considered false.
+<to be read again> 
+                   :
+gouache->...bout(A,B)rotated0;elseif(SUFFIX2)=sup:
+                                                  Xsc:=sasx*2;pickup.pencirc...
+l.20 gouache(5,8,doubl)
+                       ;
+? 
+>> (0,0,1,0,0,curve)
+! Transform components aren't all known.
+<to be read again> 
+                   rotated
+gouache->...circle.xscaled.Xsc.yscaled.Ysc.rotated
+                                                  (SUFFIX1);undraw.z(SUFFIX0...
+l.20 gouache(5,8,doubl)
+                       ;
+? 
+[78] )
+1 output file written: N78.svg
+
