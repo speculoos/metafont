@@ -1,11 +1,57 @@
-<?xml version="1.0"?>
-<!-- Created by MetaPost 1.9991 on 2017.04.13:1434 -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143.661682" height="397.010590" viewBox="0 0 143.661682 397.010590">
-<!-- Original BoundingBox: -0.100006 -95.741119 143.561676 301.269470 -->
-  <path d="M71.730835 24.836304L71.730835 149.863037L71.730835 275.894226"  id="stroke1" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 50.211548;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
-  <path d="M71.730835 326.105774L71.730835 303.511108L71.730835 275.894226"  id="stroke2" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 50.211548;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
-  <path d="M105.205200 49.942078L96.836609 49.942078C82.316727 37.758255,61.144943 37.758255,46.625061 49.942078L46.625061 -0.269470L105.205200 -0.269470Z" style="fill: rgb(100.000000%,0.000000%,0.000000%);stroke: none;"></path>
-  <path d="M38.256470 250.788452L46.625061 250.788452C61.144943 262.972275,82.316727 262.972275,96.836609 250.788452L96.836609 301.000000L38.256470 301.000000Z" style="fill: rgb(100.000000%,0.000000%,0.000000%);stroke: none;"></path>
-  <path d="M38.256470 301.000000L46.625061 301.000000C61.144943 313.183823,82.316727 313.183823,96.836609 301.000000L96.836609 351.211548L38.256470 351.211548Z" style="fill: rgb(100.000000%,0.000000%,0.000000%);stroke: none;"></path>
-  <path d="M0.000000 396.641113L0.000000 26.031799L143.461670 26.031799L143.461670 396.641113Z" style="stroke:rgb(100.000000%,100.000000%,100.000000%); stroke-width: 0.199997;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by MetaPost 1.9991 on 2017.07.28:1115 -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="143.661682"
+   height="538.181274"
+   viewBox="0 0 143.661682 538.181274"
+   id="svg8"
+   sodipodi:docname="33.svg"
+   inkscape:version="0.92.1 r">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1364"
+     inkscape:window-height="730"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="0.43851396"
+     inkscape:cx="71.830841"
+     inkscape:cy="269.09064"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
+  <!-- Original BoundingBox: -0.100006 -143.561676 143.561676 394.619598 -->
+  <path
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:53.79812622;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="M 71.730469 139.40039 C 62.686409 139.40039 53.642975 140.58052 44.832031 142.94141 L 44.832031 229.01953 L 44.832031 322.26953 C 50.183351 323.70341 55.620633 324.6948 61.091797 325.25781 L 82.371094 325.25781 C 87.842258 324.6948 93.27954 323.70341 98.630859 322.26953 L 98.630859 229.01953 L 98.630859 142.94141 C 89.819916 140.58052 80.774528 139.40039 71.730469 139.40039 z M 61.09375 349.16797 C 55.622014 349.73095 50.18399 350.7222 44.832031 352.15625 L 44.832031 383.53906 L 44.832031 394 C 62.453918 398.72177 81.008972 398.72177 98.630859 394 L 98.630859 383.53906 L 98.630859 352.15625 C 93.278901 350.7222 87.838923 349.73095 82.367188 349.16797 L 61.09375 349.16797 z "
+     id="stroke1" />
 </svg>

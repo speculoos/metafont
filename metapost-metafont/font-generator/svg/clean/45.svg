@@ -1,9 +1,57 @@
-<?xml version="1.0"?>
-<!-- Created by MetaPost 1.9991 on 2017.04.13:1434 -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="241.493774" height="370.809326" viewBox="0 0 241.493774 370.809326">
-<!-- Original BoundingBox: -25.105774 -95.741119 216.388000 275.068207 -->
-  <path d="M25.000000 174.576813C56.879272 174.911636,88.760086 175.079041,120.641113 175.079041C152.522141 175.079041,184.402954 174.911636,216.282227 174.576813"  id="stroke1" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 50.211548;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
-  <path d="M50.105774 141.102448L50.105774 149.471039C37.921951 163.990921,37.921951 185.162704,50.105774 199.682587L-0.105774 199.682587L-0.105774 141.102448Z" style="fill: rgb(100.000000%,0.000000%,0.000000%);stroke: none;"></path>
-  <path d="M191.176453 208.051178L191.176453 199.682587C203.360275 185.162704,203.360275 163.990921,191.176453 149.471039L241.388000 149.471039L241.388000 208.051178Z" style="fill: rgb(100.000000%,0.000000%,0.000000%);stroke: none;"></path>
-  <path d="M25.000000 370.641113L25.000000 0.031799L216.282227 0.031799L216.282227 370.641113Z" style="stroke:rgb(100.000000%,100.000000%,100.000000%); stroke-width: 0.199997;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by MetaPost 1.9991 on 2017.07.28:1115 -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="245.080353"
+   height="538.181274"
+   viewBox="0 0 245.080353 538.181274"
+   id="svg5"
+   sodipodi:docname="45.svg"
+   inkscape:version="0.92.1 r">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1364"
+     inkscape:window-height="730"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="0.43851396"
+     inkscape:cx="122.54018"
+     inkscape:cy="269.09064"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5" />
+  <!-- Original BoundingBox: -26.899063 -143.561676 218.181290 394.619598 -->
+  <path
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:53.79812622;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="M 52.898438 241.57227 C 48.176667 259.19415 48.176667 277.74725 52.898438 295.36914 L 121.64062 295.36914 L 190.38281 295.36914 C 195.10458 277.74725 195.10458 259.19415 190.38281 241.57227 L 121.64062 241.57227 L 52.898438 241.57227 z "
+     id="stroke1" />
 </svg>
